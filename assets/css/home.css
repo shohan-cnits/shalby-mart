@@ -1,0 +1,193 @@
+/* Fonts Link Start */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* Fonts Link End */
+
+/* Universal Start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #f59305;
+  --secondary-color: #36bd64;
+  --black: #000000;
+  --white: #ffffff;
+  --primary-font: "Righteous";
+  --secondary-font: "Raleway";
+  --primary-border: 1px solid #36bd64;
+  --secondary-border: 1px solid #f59305;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  font-family: var(--secondary-font);
+}
+
+/* Universal End */
+
+/* Hero  Start */
+#hero {
+  background: url(../image/home-hero-image/hero-image-01.png);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.hero_wrapper {
+  display: flex;
+}
+
+.hero_product {
+  width: 30%;
+}
+
+.hero_content {
+  width: 70%;
+}
+
+.hero_product_btn {
+  margin-top: 40px;
+  display: block;
+}
+
+.hero_product_btn a {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  color: var(--black);
+  transition: 0.3s ease;
+}
+
+.hero_product_btn a:hover {
+  background: var(--white);
+}
+
+.hero_content {
+  margin-left: 40px;
+  margin-top: 90px;
+}
+
+.hero_content_btn a {
+  display: inline-block;
+  padding: 10px 25px;
+  background: var(--secondary-color);
+  margin-bottom: 30px;
+  border-radius: 50px;
+  color: var(--white);
+  font-size: 18px;
+  font-family: var(--secondary-font);
+}
+
+.hero_content_text h1 {
+  font-size: 50px;
+  color: var(--white);
+}
+
+.hero_content_text p {
+  font-size: 16px;
+  font-family: var(--secondary-font);
+  word-spacing: 3px;
+  color: #000000;
+  padding-bottom: 30px;
+}
+
+.hero_content_text a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #f59305;
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+  color: var(--white);
+  transition: 0.3s ease;
+}
+
+.hero_content_text a:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+@media screen and (max-width: 1201px) {
+  .hero_content_text h1 {
+    font-size: 40px;
+  }
+
+  #hero {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero_product {
+    display: none;
+  }
+
+  .hero_content {
+    width: 100%;
+  }
+
+  .hero_content {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .hero_content_text h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #hero {
+    height: 80vh;
+  }
+}
+/* Hero  End */
+
+/* Feature Start */
+.feature_product_servies {
+  margin-top: -100px;
+}
+
+.feature_product_servies_card {
+  border: var(--primary-border);
+  width: 100%;
+  padding: 10px;
+  background: var(--white);
+  opacity: 0.9;
+}
+
+.feature_card_img svg {
+  display: block;
+  margin: auto;
+  width: 60px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.feature_product_servies_card h1 {
+  font-size: 20px !important;
+  text-align: center;
+}
+
+/* Feature End */
