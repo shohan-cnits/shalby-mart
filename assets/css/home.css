@@ -297,9 +297,9 @@ p {
   padding: 20px;
   transition: 0.5s ease;
 }
-
+.special_offer_overlay,
 .special-offer-card:hover {
-  border: 1px solid rgba(163, 163, 163, 0.5);
+  border: 1px solid #fff;
 }
 
 .special_offer_imgs {
@@ -328,12 +328,45 @@ p {
   padding-bottom: 20px;
 }
 
-.swiper-button-next::after:hover {
-  background: var(--primary-color);
-  color: var(--white);
+.special_offer_overlay {
   position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  padding-top: 27vh;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
 }
 
+.special_offer_overlay a {
+  display: inline-block !important;
+  width: 160px;
+  height: 40px;
+  background: var(--primary-color);
+  color: var(--white);
+  margin: auto;
+  padding-top: 5px;
+  font-size: 16px;
+  border: var(--secondary-border);
+  border-radius: 5px;
+  font-family: var(--primary-font);
+  transition: 0.3s ease;
+}
+
+.special_offer_overlay a:nth-child(2) {
+  margin-top: 10px !important;
+}
+
+.special_offer_overlay:hover {
+  opacity: 1;
+}
+
+.special_offer_overlay a:hover {
+  background: var(--white);
+  color: var(--primary-color);
+}
 .special-offer-card_btn a {
   font-size: 16px;
   font-family: var(--secondary-font);
@@ -364,4 +397,137 @@ p {
     left: 93%;
   }
 }
+
+@media screen and (max-width: 575px) {
+  .special_offer_heading h1 {
+    font-size: 30px;
+  }
+
+  .special_offer_heading h1 span:nth-child(2) {
+    font-size: 22px !important;
+  }
+}
 /* Special Offers End */
+
+/* Popular Products Start */
+#popular_product {
+  padding: 10px 0 30px 0;
+}
+
+.popular_product_heading h1 {
+  display: inline-block;
+  border-bottom: 2px solid var(--secondary-color);
+  font-size: 35px;
+  padding-bottom: 5px;
+}
+
+.popular_product_btn {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  text-align: end;
+}
+
+.popular_product_btn a {
+  display: inline-block;
+  padding: 5px 20px;
+  border: var(--secondary-border);
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+.popular_product_wrapper {
+  margin-top: 20px;
+}
+
+.popular_product_card_wrapper {
+  border: var(--primary-border);
+  width: 100%;
+  padding: 30px;
+  /* height: 450px; */
+  position: relative;
+  background: #ffffff;
+}
+
+.popular_product_card_img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular_product_card_img svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 130px;
+  text-align: center;
+}
+
+.popular_product_card_rating {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.popular_product_card_text {
+  text-align: center;
+}
+
+.popular_product_card_text h1 {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.popular_product_card_text p {
+  font-size: 20px;
+  font-family: var(--primary-font) !important;
+  color: var(--primary-color);
+}
+
+.popular_product_card_text a {
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.popular_product_card_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  padding-top: 20px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.popular_product_card_overlay a {
+  display: inline-block !important;
+  width: 160px;
+  height: 40px;
+  background: var(--primary-color);
+  padding-top: 6px;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 16px;
+}
+
+.popular_product_card_overlay a:nth-child(2) {
+  margin-top: 10px;
+}
+
+.popular_product_card_wrapper:hover .popular_product_card_overlay {
+  height: 30%;
+  opacity: 1;
+}
+/* Popular Products End */
