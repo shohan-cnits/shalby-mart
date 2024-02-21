@@ -291,7 +291,7 @@ p {
 .special-offer-card {
   background: var(--white);
   width: 100%;
-  height: 450px;
+  height: 500px;
   position: relative;
   border: var(--primary-border);
   padding: 20px;
@@ -341,7 +341,7 @@ p {
 }
 
 .special_offer_overlay a {
-  display: inline-block !important;
+  display: block;
   width: 160px;
   height: 40px;
   background: var(--primary-color);
@@ -407,6 +407,7 @@ p {
     font-size: 22px !important;
   }
 }
+
 /* Special Offers End */
 
 /* Popular Products Start */
@@ -431,6 +432,7 @@ p {
 .popular_product_btn a {
   display: inline-block;
   padding: 5px 20px;
+  font-size: 18px;
   border: var(--secondary-border);
   font-family: var(--primary-font);
   color: var(--primary-color);
@@ -463,7 +465,7 @@ p {
   justify-content: center;
   align-items: center;
 
-  width: 130px;
+  width: 160px !important;
   text-align: center;
 }
 
@@ -487,6 +489,7 @@ p {
   font-size: 20px;
   font-family: var(--primary-font) !important;
   color: var(--primary-color);
+  padding-bottom: 15px;
 }
 
 .popular_product_card_text a {
@@ -500,11 +503,9 @@ p {
   left: 0;
   background: rgba(0, 0, 0, 0.3);
   width: 100%;
-  height: 0%;
+  height: 0;
   opacity: 0;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
   display: inline-block;
   padding-top: 20px;
   transition: 0.3s ease;
@@ -512,7 +513,7 @@ p {
 }
 
 .popular_product_card_overlay a {
-  display: inline-block !important;
+  display: block;
   width: 160px;
   height: 40px;
   background: var(--primary-color);
@@ -520,14 +521,37 @@ p {
   color: var(--white);
   font-family: var(--primary-font);
   font-size: 16px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .popular_product_card_overlay a:nth-child(2) {
   margin-top: 10px;
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .popular_product_card_wrapper:hover .popular_product_card_overlay {
   height: 30%;
   opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .popular_product_heading h1 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .popular_product_heading h1 {
+    font-size: 16px;
+  }
+  .popular_product_btn a {
+    font-size: 14px;
+  }
 }
 /* Popular Products End */
