@@ -1321,4 +1321,72 @@ p {
   background: var(--primary-color);
   color: var(--white);
 }
+
 /* Deals End */
+
+/* Latest News Start */
+.latest_news_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.latest_news_heading h1 {
+  display: inline-block;
+  border-bottom: 2px solid var(--secondary-color);
+  font-size: 40px;
+}
+
+.latest_news_content {
+  padding: 20px 0;
+}
+
+.latest_news_slider {
+  padding: 60px 0;
+}
+
+.latest_news_card_heading p {
+  text-align: start !important;
+  font-size: 16px;
+  padding-top: 5px;
+  color: rgba(121, 121, 121, 1);
+}
+
+.latest_news_card_heading h1 {
+  text-align: start !important;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.latest_news_card_btn {
+  display: flex;
+  text-align: start !important;
+  align-items: start !important;
+  justify-content: start !important;
+}
+
+.latest_news_card_btn a {
+  display: inline-block;
+  border-bottom: 2px solid var(--secondary-color);
+  font-family: var(--secondary-font);
+  color: var(--black);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.latest_news_menu {
+  background: url(../image/latest_news_image/latest_news_image_03.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .latest_news_menu {
+    height: 600px;
+  }
+}
+/* Latest News End */
