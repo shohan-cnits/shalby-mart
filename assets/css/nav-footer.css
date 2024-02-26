@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-color: #f59305;
   --secondary-color: #36bd64;
@@ -46,7 +50,36 @@ ul {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 /* Universal End */
+
+/* Go-Back Start */
+#progress {
+  /* background: #36d444; */
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-sizing: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.progress-value {
+  display: block;
+  width: calc(100% - 15px);
+  height: calc(100% - 15px);
+  background: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #36d444;
+}
+/* Go-Back End */
 
 /* Topbar Start */
 #topbar {
@@ -844,6 +877,14 @@ ul {
   height: 20px;
 }
 
+.footer_content_wrapper_address span {
+  font-family: var(--secondary-font);
+}
+
+.footer_menu_items span a {
+  font-family: var(--secondary-font);
+}
+
 .footer_content_wrapper_img img {
   width: 100%;
   height: 100%;
@@ -851,6 +892,7 @@ ul {
 
 .footer_content_wrapper_menu span a {
   color: rgba(163, 163, 163, 1);
+  font-family: var(--secondary-font);
 }
 
 .footer_content_wrapper_box {
@@ -866,6 +908,7 @@ ul {
 
 .footer_content_wrapper_address span a {
   color: rgba(163, 163, 163, 1);
+  font-family: var(--secondary-font);
 }
 
 .footer_menu_item_list {
@@ -873,6 +916,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding-bottom: 30px;
 }
 
 .footer_menu_items a {
@@ -897,6 +941,36 @@ ul {
 
 .footer_menu_items a:hover .fa-brands {
   color: var(--white) !important;
+}
+
+.copy_right {
+  border-top: var(--primary-border);
+  width: 100%;
+}
+
+.copy_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.copy_right_card {
+  height: 30px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.copy_right_text a {
+  font-size: 16px;
+  color: rgba(163, 163, 163, 1);
+  font-family: var(--secondary-font);
+}
+
+.copy_right_card img {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 992px) {
@@ -924,6 +998,10 @@ ul {
 
   .footer_menu_item_list {
     justify-content: start;
+  }
+
+  .copy_right {
+    flex-direction: column;
   }
 }
 /* Footer End */
