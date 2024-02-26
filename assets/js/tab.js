@@ -4,7 +4,7 @@ const productTabBox = document.querySelector(".product_menu_item_tab"),
 
 productArrowIcons.forEach((icon) => {
   icon.addEventListener("click", () => {
-    productTabBox.scrollLeft += icon.id === "left" ? -200 : 200;
+    productTabBox.scrollTop += icon.id === "top" ? -200 : 200;
   });
 });
 
@@ -12,7 +12,7 @@ let isDraggingProduct = false;
 const productDragging = (e) => {
   if (!isDraggingProduct) return;
   productTabBox.classList.add("productDragging");
-  productTabBox.scrollLeft -= e.movementX;
+  productTabBox.scrollTop -= e.movementX;
 };
 
 const productDragStop = () => {
