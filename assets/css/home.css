@@ -41,7 +41,7 @@ p {
 
 /* Hero  Start */
 #hero {
-  background: url(../image/home-hero-image/hero-image-01.png);
+  background: url(../image/home-all-image/home-hero-image/hero-image-01.png);
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -760,7 +760,7 @@ p {
 }
 
 .product_discount_items_special_img {
-  background: url(../image/discount-image/discount-image-01.png);
+  background: url(../image/home-all-image/discount-image/discount-image-01.png);
   width: 100%;
   height: 550px;
   background-position: center;
@@ -817,7 +817,7 @@ p {
 }
 
 .product_discount__item_offer_img {
-  background: url(../image/discount-image/discount-image-02.png);
+  background: url(../image/home-all-image/discount-image/discount-image-02.png);
   width: 100%;
   height: 350px;
   background-repeat: no-repeat;
@@ -886,7 +886,7 @@ p {
 }
 
 .product_discount_item_hot_img {
-  background: url(../image/discount-image/discount-image-03.png);
+  background: url(../image/home-all-image/discount-image/discount-image-03.png);
   width: 100%;
   height: 550px;
   background-repeat: no-repeat;
@@ -1163,7 +1163,7 @@ p {
 }
 
 .deals_slider_card_item_fast {
-  background: url(../image/deals-image/deals_image_01.png);
+  background: url(../image/home-all-image/deals-image/deals_image_01.png);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1222,7 +1222,7 @@ p {
   color: var(--white);
 }
 .deals_slider_card_item_second {
-  background: url(../image/deals-image/deals_image_02.png);
+  background: url(../image/home-all-image/deals-image/deals_image_02.png);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1270,7 +1270,7 @@ p {
 }
 
 .deals_slider_card_menu_third {
-  background: url(../image/deals-image/deals_image_03.png);
+  background: url(../image/home-all-image/deals-image/deals_image_03.png);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1380,7 +1380,7 @@ p {
 }
 
 .latest_news_menu {
-  background: url(../image/latest_news_image/latest_news_image_03.png);
+  background: url(../image/home-all-image/latest_news_image/latest_news_image_03.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
