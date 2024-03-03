@@ -181,6 +181,85 @@ p {
 .products_views_content_text p {
   font-size: 16px !important;
 }
+
+.products_views_content_items {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.counting_number {
+  height: 40px;
+  min-width: 100px !important;
+  background: #fae9d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.counting_number span {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: var(--primary-font);
+}
+
+.counting_number span.num {
+  font-size: 25px;
+  pointer-events: none;
+}
+
+.minus {
+  height: 30px;
+  width: 50px !important;
+  margin-left: 5px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+.minus:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.plus:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.plus {
+  height: 30px;
+  width: 50px !important;
+  margin-right: 5px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+.counting_number_btn a {
+  padding: 7px 30px;
+  border: var(--secondary-border);
+  background-color: var(--white);
+  color: var(--primary-color);
+  font-size: 16px;
+  font-family: var(--primary-font);
+  transition: 0.5s;
+  border-radius: 6px;
+}
+
+.counting_number_btn a:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
 /* Products Views End */
 
 /* Best Sellers Start  */
