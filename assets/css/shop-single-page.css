@@ -1,0 +1,336 @@
+/* Fonts Link Start */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* Fonts Link End */
+
+/* Universal Start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #f59305;
+  --secondary-color: #36bd64;
+  --black: #000000;
+  --white: #ffffff;
+  --primary-font: "Righteous";
+  --secondary-font: "Raleway";
+  --primary-border: 1px solid #36bd64;
+  --secondary-border: 1px solid #f59305;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  font-family: var(--secondary-font);
+}
+
+/* Universal End */
+
+/* Hero  Start */
+#shop_hero {
+  background: url(../image/shop-all-image/hero_image/shop_hero_image_01.png);
+  width: 100%;
+  height: 55vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.shop_hero_heading {
+  padding-top: 20vh;
+}
+
+.shop_hero_heading h1 {
+  font-size: 50px;
+  color: var(--white);
+}
+
+.shop_hero_heading p {
+  font-size: 16px;
+  color: var(--white);
+}
+
+@media screen and (max-width: 992px) {
+  .shop_hero_heading h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .shop_hero_heading h1 {
+    font-size: 30px;
+  }
+  .shop_hero_heading p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .shop_hero_heading h1 {
+    font-size: 22px;
+  }
+  .shop_hero_heading p {
+    font-size: 12px;
+  }
+}
+/* Hero  End */
+
+/* Page Information Start  */
+.page_information {
+  padding: 20px 0 50px 0;
+}
+
+.page_information_content a {
+  color: var(--black);
+  font-weight: 500;
+  font-family: var(--secondary-font);
+  font-size: 20px;
+}
+
+.page_information_content a:nth-child(2) {
+  margin-left: 3px;
+}
+
+.page_information_content a:nth-child(3) {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.page_information_content a:nth-child(2) svg {
+  width: 10px !important;
+}
+.page_information_content a:nth-child(4) svg {
+  width: 10px !important;
+}
+/* Page Information End */
+
+/* Products Views Start */
+#products_views {
+  padding: 30px 0 60px 0;
+}
+
+.products_views_content {
+  border: var(--primary-border);
+  padding: 30px;
+}
+
+.products_views_content_image {
+  width: 380px;
+  height: 450px;
+  display: block;
+  padding: 20px 0;
+  margin: auto;
+}
+
+.products_views_content_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.products_views_content_heading h1 {
+  font-size: 40px;
+}
+
+.products_views_content_rating {
+  display: flex;
+  gap: 10px;
+}
+
+.products_views_content_rating p {
+  font-size: 16px;
+}
+
+.products_views_content_rating p:nth-last-child(1) {
+  border-left: var(--primary-border);
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.products_views_content_rate {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.products_views_content_rate p:nth-child(1) {
+  font-size: 35px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.products_views_content_rate p:nth-child(2) {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: 500;
+  align-items: center;
+}
+
+.products_views_content_text p {
+  font-size: 16px !important;
+}
+/* Products Views End */
+
+/* Best Sellers Start  */
+#best_seller {
+  padding: 20px 0 30px 0;
+}
+
+.best_seller_heading h1 {
+  display: inline-block;
+  border-bottom: 2px solid var(--secondary-color);
+  font-size: 35px;
+  padding-bottom: 5px;
+}
+
+.best_seller_btn {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  text-align: end;
+}
+
+.best_seller_btn a {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 18px;
+  border: var(--secondary-border);
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+.best_seller_wrapper:nth-child(1) {
+  margin-top: 80px !important;
+}
+
+.best_seller_card_wrapper {
+  border: var(--primary-border);
+  width: 100%;
+  padding: 25px;
+  aspect-ratio: 2/1;
+  position: relative;
+  background: #ffffff;
+}
+
+.best_seller_card_img img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.best_seller_card_img {
+  display: block;
+  width: 160px !important;
+  height: 160px;
+  text-align: center;
+  margin: auto;
+}
+
+.best_seller_card_rating {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.best_seller_card_text {
+  text-align: center;
+  width: 100%;
+}
+
+.best_seller_card_text h1 {
+  font-size: 20px;
+  padding-bottom: 15px;
+  height: 60px;
+}
+
+.best_seller_card_text p {
+  font-size: 20px;
+  font-family: var(--primary-font) !important;
+  color: var(--primary-color);
+  padding-bottom: 15px;
+}
+
+.best_seller_card_text a {
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.best_seller_card_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  margin: auto;
+  display: inline-block;
+  padding-top: 20px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.best_seller_card_overlay a {
+  display: block;
+  width: 160px;
+  height: 40px;
+  background: var(--primary-color);
+  padding-top: 6px;
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+}
+
+.best_seller_card_overlay a:hover {
+  background: rgba(209, 124, 0, 1);
+}
+
+.best_seller_card_overlay a:nth-child(2) {
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.best_seller_card_wrapper:hover .best_seller_card_overlay {
+  height: 30%;
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .best_seller_heading h1 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .best_seller_heading h1 {
+    font-size: 16px;
+  }
+  .best_seller_btn a {
+    font-size: 14px;
+  }
+}
+/* Best Sellers End */
