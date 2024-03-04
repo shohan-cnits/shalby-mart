@@ -385,6 +385,7 @@ ul {
   position: relative;
   text-transform: capitalize;
   transition: color 0.3s ease;
+  font-family: var(--secondary-font);
 }
 
 .header .menu > ul > li .sub-menu {
@@ -498,6 +499,7 @@ ul {
   transition: color 0.3s ease;
   text-decoration: none;
   text-transform: capitalize;
+  font-family: var(--secondary-font);
 }
 .header .menu > ul > li .single-column-menu {
   min-width: 280px;
