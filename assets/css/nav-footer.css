@@ -77,7 +77,6 @@ ul {
   display: grid;
   place-items: center;
   font-size: 25px;
-  color: #36d444;
 }
 /* Go-Back End */
 
@@ -600,6 +599,7 @@ ul {
 
   .header .menu > ul > li .sub-menu {
     outline-offset: none;
+    outline: none;
   }
 
   .menu_item-has_children_btn a {
@@ -1004,7 +1004,7 @@ ul {
 
 @media screen and (max-width: 992px) {
   #footer {
-    height: 100%;
+    height: auto;
     background-position: center;
     background-size: cover;
   }
@@ -1012,7 +1012,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   #footer {
-    height: 100%;
+    height: auto;
     background-position: center;
     background-size: cover;
   }

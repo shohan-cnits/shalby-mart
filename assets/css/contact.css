@@ -1,0 +1,335 @@
+/* Fonts Link Start */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* Fonts Link End */
+
+/* Universal Start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #f59305;
+  --secondary-color: #36bd64;
+  --black: #000000;
+  --white: #ffffff;
+  --primary-font: "Righteous";
+  --secondary-font: "Raleway";
+  --primary-border: 1px solid #36bd64;
+  --secondary-border: 1px solid #f59305;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  font-family: var(--secondary-font);
+}
+
+/* Universal End */
+
+/* Hero  Start */
+#contact_hero {
+  background: url(../image/contact-page-all-image/contact-page-01.png);
+  width: 100%;
+  height: 55vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact_hero_heading {
+  padding-top: 20vh;
+}
+
+.contact_hero_heading h1 {
+  font-size: 50px;
+  color: var(--white);
+}
+
+.contact_hero_heading p {
+  font-size: 16px;
+  color: var(--white);
+}
+
+@media screen and (max-width: 992px) {
+  .contact_hero_heading h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .contact_hero_heading h1 {
+    font-size: 30px;
+  }
+  .contact_hero_heading p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact_hero_heading h1 {
+    font-size: 22px;
+  }
+  .contact_hero_heading p {
+    font-size: 12px;
+  }
+}
+/* Hero  End */
+
+/* Page Information Start  */
+.page_information {
+  padding: 20px 0 50px 0;
+}
+
+.page_information_content a {
+  color: var(--black);
+  font-weight: 500;
+  font-family: var(--secondary-font);
+  font-size: 20px;
+}
+
+.page_information_content a:nth-child(2) {
+  margin-left: 3px;
+}
+
+.page_information_content a:nth-child(3) {
+  margin-left: 3px;
+}
+
+.page_information_content a:nth-child(2) svg {
+  width: 10px !important;
+}
+/* Page Information End */
+
+/* Address Box Start */
+#address_box {
+  padding: 10px 0 50px 0;
+}
+
+.address_box_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address_box_heading h1 {
+  font-size: 38px;
+  display: inline-block;
+  padding: 0 0 4px 0;
+  border-bottom: var(--primary-border);
+}
+
+.address_box_heading_text {
+  margin-top: 20px;
+}
+
+.address_box_heading_text p {
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+}
+
+.address_wrapper {
+  margin-top: 50px;
+}
+
+.address_wrapper_box {
+  width: 100%;
+  padding: 30px;
+  height: 220px;
+  border: var(--primary-border);
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.address_content_box h1 {
+  text-align: center;
+  font-size: 40px;
+  color: var(--primary-color);
+  padding-bottom: 20px;
+}
+
+.address_content_box address {
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  color: rgba(163, 163, 163, 1);
+  font-family: var(--secondary-font);
+}
+
+.phone_content_box h1 {
+  text-align: center;
+  font-size: 40px;
+  color: var(--primary-color);
+  padding-bottom: 20px;
+}
+
+.phone_content_box_btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.phone_content_box_btn a {
+  display: block;
+  font-family: 16px;
+  color: rgba(163, 163, 163, 1);
+  font-family: var(--secondary-font);
+}
+
+.phone_content_box_btn a:nth-child(2) {
+  margin-top: 8px;
+}
+
+.email_content_box h1 {
+  text-align: center;
+  font-size: 40px;
+  color: var(--primary-color);
+  padding-bottom: 20px;
+}
+
+.email_content_box_btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.email_content_box_btn a {
+  display: block;
+  font-family: 16px;
+  color: rgba(163, 163, 163, 1);
+  font-family: var(--secondary-font);
+}
+
+.email_content_box_btn a:nth-child(2) {
+  margin-top: 8px;
+}
+
+.address_box_map_content iframe {
+  width: 100%;
+  aspect-ratio: 3/1;
+  margin-bottom: 70px;
+}
+
+.address_servies_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address_servies_heading h1 {
+  display: inline-block;
+  padding-bottom: 4px;
+  font-size: 40px;
+  border-bottom: var(--primary-border);
+}
+
+.address_servies_wrapper {
+  margin-top: 30px;
+}
+
+.servies_wrapper_content_heading {
+  text-align: center;
+}
+
+.servies_wrapper_content_heading h1 {
+  font-size: 25px;
+}
+
+.servies_wrapper_content_heading p {
+  font-size: 16px;
+  margin-top: 7px;
+  align-items: center;
+}
+/* Address Box End */
+
+/* Message Box Start */
+#message_box {
+  padding: 10px 0 40px 0;
+}
+
+.message_box_heading h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.message_box_content form input {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 7px;
+  border: var(--primary-border);
+  outline: none;
+}
+
+.message_box_content form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 7px;
+  aspect-ratio: 4/1;
+  border: var(--primary-border);
+  outline: none;
+}
+
+.message_box_content_cheakbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.message_box_content_cheakbox input {
+  width: 30px !important;
+  padding: 10px !important;
+  border: var(--primary-border) !important;
+}
+
+.message_box_content_cheakbox label {
+  margin-top: 30px;
+  font-size: 12px;
+  font-family: var(--secondary-font);
+}
+
+.message_box_content_cheakbox_btn {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.message_box_content_cheakbox_btn a {
+  display: inline-block;
+  padding: 7px 30px;
+  border: var(--secondary-border);
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.message_box_content_cheakbox_btn a:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+@media screen and (max-width: 991px) {
+  .message_box_content_cheakbox_btn {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+}
+/* Message Box End */
