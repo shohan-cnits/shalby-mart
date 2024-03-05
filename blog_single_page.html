@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shalby Mart | Blog Single Page</title>
+
+    <!-- Font Awesome Icon CDN CSS Start -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Font Awesome Icon CDN CSS End -->
+
+    <!-- Link Swiper's CSS Start -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Link Swiper's CSS End -->
+
+    <!-- Main CSS Start -->
+    <link rel="stylesheet" href="./assets/css/blog_single_page.css" />
+    <link rel="stylesheet" href="./assets/css/nav-footer.css" />
+    <!-- Main CSS End -->
+
+    <!-- Bootstrap CSS Link Start -->
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <!-- Bootstrap CSS Link End -->
+  </head>
+  <body>
+    <!-- Topbar Start -->
+    <section id="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="topbar_timeline">
+              <div class="topbar_time">
+                <h3>Open Hours:</h3>
+              </div>
+              <div class="topbar_date">
+                <p style="text-align: center">Mon-Sat</p>
+                <p>07:00 am - 10:30 pm</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="topbar_section_items">
+              <p class="">Need Help?</p>
+              <form>
+                <select id="cars" name="cars">
+                  <option value="volvo">USD</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </form>
+              <form>
+                <select id="cars" name="cars">
+                  <option value="volvo">English</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Topbar End -->
+
+    <!-- Header Start -->
+    <section id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="header_logo">
+              <img src="./assets/icon/nav-logo.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="header_form">
+              <div class="from_search">
+                <form action="">
+                  <input
+                    type="search"
+                    id="search_btn"
+                    placeholder="Search Products..."
+                  />
+                  <button for="search_btn" name="search_btn">
+                    <svg
+                      width="23"
+                      height="23"
+                      viewBox="0 0 23 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21.9556 17.0431L19.5603 14.5992C19.0451 14.1113 18.3952 13.788 17.6941 13.6709C16.9931 13.5538 16.2729 13.6483 15.6261 13.9421L14.5847 12.9046C15.8119 11.271 16.3723 9.23494 16.1532 7.20621C15.9341 5.17749 14.9517 3.30678 13.4038 1.97067C11.8558 0.634566 9.85731 -0.0677331 7.81051 0.00515482C5.76372 0.0780427 3.82062 0.920705 2.3724 2.36351C0.924167 3.80631 0.0783361 5.74213 0.0051742 7.78126C-0.0679877 9.82039 0.636952 11.8114 1.97808 13.3536C3.31922 14.8957 5.19696 15.8744 7.23331 16.0927C9.26966 16.311 11.3134 15.7527 12.9531 14.5301L13.983 15.556C13.6533 16.2012 13.5352 16.9331 13.6452 17.6487C13.7552 18.3643 14.0879 19.0274 14.5963 19.5447L17.0494 21.9886C17.7002 22.6362 18.5825 23 19.5025 23C20.4224 23 21.3047 22.6362 21.9556 21.9886C22.2862 21.6665 22.5489 21.2819 22.7283 20.8572C22.9076 20.4326 23 19.9766 23 19.5159C23 19.0552 22.9076 18.5991 22.7283 18.1745C22.5489 17.7499 22.2862 17.3652 21.9556 17.0431ZM12.1432 12.1553C11.3335 12.96 10.3025 13.5075 9.18063 13.7287C8.05873 13.9499 6.89619 13.8349 5.83986 13.3982C4.78353 12.9616 3.88081 12.2228 3.24572 11.2752C2.61064 10.3277 2.27169 9.21383 2.27169 8.07445C2.27169 6.93507 2.61064 5.82125 3.24572 4.8737C3.88081 3.92614 4.78353 3.18735 5.83986 2.75066C6.89619 2.31398 8.05873 2.19898 9.18063 2.42021C10.3025 2.64143 11.3335 3.18894 12.1432 3.99359C12.682 4.52901 13.1094 5.16506 13.4011 5.86532C13.6928 6.56559 13.8429 7.3163 13.8429 8.07445C13.8429 8.83261 13.6928 9.58332 13.4011 10.2836C13.1094 10.9838 12.682 11.6199 12.1432 12.1553ZM20.324 20.3055C20.2164 20.4136 20.0885 20.4993 19.9475 20.5579C19.8064 20.6164 19.6552 20.6465 19.5025 20.6465C19.3497 20.6465 19.1985 20.6164 19.0575 20.5579C18.9164 20.4993 18.7885 20.4136 18.6809 20.3055L16.2278 17.8616C16.1193 17.7544 16.0333 17.6269 15.9745 17.4865C15.9158 17.346 15.8855 17.1953 15.8855 17.0431C15.8855 16.891 15.9158 16.7403 15.9745 16.5998C16.0333 16.4593 16.1193 16.3318 16.2278 16.2247C16.3354 16.1166 16.4634 16.0308 16.6044 15.9723C16.7454 15.9138 16.8966 15.8837 17.0494 15.8837C17.2021 15.8837 17.3534 15.9138 17.4944 15.9723C17.6354 16.0308 17.7633 16.1166 17.8709 16.2247L20.324 18.6686C20.4325 18.7757 20.5185 18.9032 20.5773 19.0437C20.636 19.1842 20.6663 19.3349 20.6663 19.487C20.6663 19.6392 20.636 19.7899 20.5773 19.9304C20.5185 20.0709 20.4325 20.1984 20.324 20.3055Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="header_address">
+              <div class="header_address_call">
+                <div class="header_address_call_img">
+                  <a href="tel: 20900383945"
+                    ><svg
+                      width="29"
+                      height="27"
+                      viewBox="0 0 29 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M27.5388 24.0896L29 20.0801L28.3738 19.8861C25.3817 18.9161 22.5288 17.5581 19.9543 15.8767L19.3976 15.4887L17.171 18.3987C14.1789 16.3294 11.5348 13.872 9.30812 11.0912L12.4393 9.02186L12.0218 8.50452C10.2127 6.1118 8.75146 3.4604 7.70773 0.67967L7.49898 0.0976562L3.18486 1.45569C1.93237 1.8437 0.958213 2.68438 0.401553 3.84841C-0.155108 5.07711 -0.155108 6.49981 0.540718 7.7285C4.78526 15.9414 11.9523 22.6668 20.7893 26.5469C21.4851 26.8703 22.2505 26.9996 23.0159 26.9996C23.7117 26.9996 24.338 26.8703 24.9642 26.6116C26.2167 26.2236 27.1213 25.2536 27.5388 24.0896ZM24.4075 25.5122C23.4334 25.9003 22.3201 25.8356 21.3459 25.4476C12.7873 21.6322 5.82899 15.1653 1.72362 7.21115C1.23654 6.3058 1.23654 5.27111 1.65404 4.36576C2.00195 3.58974 2.69778 2.94306 3.60235 2.68438L6.5944 1.77903C7.56856 4.23642 8.89063 6.56447 10.4214 8.76319L8.40355 10.0566C7.35981 8.69852 6.45524 7.21116 5.68983 5.72379L4.50693 6.3058C5.34192 7.85784 6.24649 9.40987 7.35981 10.8326L7.77731 11.3499C10.2823 14.648 13.3439 17.4934 16.8926 19.8214L17.4493 20.2095C18.9801 21.1795 20.6501 22.0848 22.3201 22.8609L22.9463 21.6968C21.3459 20.9855 19.7455 20.1448 18.2843 19.1748L19.6759 17.2994C22.0417 18.7868 24.5467 19.9508 27.1909 20.8561L26.1471 23.6369C25.9384 24.4776 25.2425 25.1889 24.4075 25.5122Z"
+                        fill="#36BD64"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="header_address_call_text">
+                  <p>Call Now</p>
+                  <a href="#">+125 4544 650</a>
+                </div>
+              </div>
+              <div class="header_menu mt-2">
+                <div class="header_menu_items">
+                  <a href="#"
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.48 18.6H6.91799L3.84899 1.726C3.81309 1.52392 3.70767 1.34075 3.551 1.20818C3.39432 1.07561 3.19623 1.00197 2.99099 1H1"
+                        stroke="white"
+                        stroke-width="1.61607"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.03984 22.9996C9.25486 22.9996 10.2398 22.0146 10.2398 20.7996C10.2398 19.5846 9.25486 18.5996 8.03984 18.5996C6.82481 18.5996 5.83984 19.5846 5.83984 20.7996C5.83984 22.0146 6.82481 22.9996 8.03984 22.9996Z"
+                        stroke="white"
+                        stroke-width="1.61607"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M19.4793 22.9996C20.6943 22.9996 21.6793 22.0146 21.6793 20.7996C21.6793 19.5846 20.6943 18.5996 19.4793 18.5996C18.2643 18.5996 17.2793 19.5846 17.2793 20.7996C17.2793 22.0146 18.2643 22.9996 19.4793 22.9996Z"
+                        stroke="white"
+                        stroke-width="1.61607"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.11453 14.2004H19.9305C20.3419 14.2016 20.7405 14.0579 21.0563 13.7943C21.3722 13.5308 21.585 13.1643 21.6575 12.7594L22.9995 5.40039H4.51953"
+                        stroke="white"
+                        stroke-width="1.61607"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="header_menu_items">
+                  <a href="#"
+                    ><svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.6726 10.8631C16.6721 9.70852 17.2857 8.18807 17.2857 6.51852C17.2857 2.92437 14.4658 0 11 0C7.53421 0 4.71429 2.92437 4.71429 6.51852C4.71429 10.1127 7.53421 13.037 11 13.037C12.2218 13.037 13.3595 12.6679 14.3259 12.0397C17.7438 13.3752 20.097 16.619 20.3964 20.3704H1.60443C1.80793 17.8453 2.95036 15.4904 4.80857 13.8103C5.13621 13.5145 5.17 13.0004 4.88479 12.6606C4.60036 12.3216 4.10379 12.2858 3.77614 12.5816C1.37579 14.7506 0 17.886 0 21.1852C0 21.6358 0.352 22 0.785714 22H21.2143C21.6488 22 22 21.6358 22 21.1852C22 16.7151 19.5014 12.7233 15.6726 10.8631ZM6.28571 6.51852C6.28571 3.8223 8.40007 1.62963 11 1.62963C13.5999 1.62963 15.7143 3.8223 15.7143 6.51852C15.7143 9.21474 13.5999 11.4074 11 11.4074C8.40007 11.4074 6.28571 9.21474 6.28571 6.51852Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Header End -->
+
+    <!-- Navbar Start -->
+    <header class="header">
+      <div class="container">
+        <div class="row v-center">
+          <div class="header-item item-left">
+            <div class="logo">
+              <a href="#"><img src="./assets/icon/nav-logo.svg" alt="" /></a>
+            </div>
+          </div>
+          <!-- menu start here -->
+          <div class="header-item item-center">
+            <div class="menu-overlay"></div>
+            <nav class="menu">
+              <div class="mobile-menu-head">
+                <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="menu-main">
+                <li class="menu-item-has-children menu_item-has_children_btn">
+                  <a href="#"
+                    >All Categories <i class="fa fa-angle-down"></i
+                  ></a>
+                  <div class="sub-menu mega-menu mega-menu-column-4">
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <h4 class="title"><a href="#">Popular Product</a></h4>
+                        <h4 class="title">
+                          <a href="#">Fruits & Vegetables</a>
+                        </h4>
+                        <h4 class="title"><a href="#">Milk & Juices</a></h4>
+                        <h4 class="title"><a href="#">Meats & Protein</a></h4>
+                        <h4 class="title"><a href="#">Beverage & Drinks</a></h4>
+                      </a>
+                    </div>
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <h4 class="title"><a href="#">Chocolate Box</a></h4>
+                        <h4 class="title"><a href="#">Bakery</a></h4>
+                        <h4 class="title"><a href="#">Coffee & Snacks</a></h4>
+                        <h4 class="title">
+                          <a href="#">Condiments / Spices</a>
+                        </h4>
+                        <h4 class="title"><a href="#">Oils & Vinegars</a></h4>
+                      </a>
+                    </div>
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <h4 class="title">
+                          <a href="#">Canned & Dried Goods</a>
+                        </h4>
+                        <h4 class="title"><a href="#">Personal Care</a></h4>
+                        <h4 class="title"><a href="#">Paper & Warp</a></h4>
+                        <h4 class="title">
+                          <a href="#">House Hold Supplies</a>
+                        </h4>
+                        <h4 class="title"><a href="#">Baby Items</a></h4>
+                      </a>
+                    </div>
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <h4 class="title"><a href="#">Flour/ Atta</a></h4>
+                        <h4 class="title">
+                          <a href="#" class="title_item"
+                            >Dal/ Lentils & Legumes</a
+                          >
+                        </h4>
+                        <h4 class="title"><a href="#">Add More Item</a></h4>
+                        <h4 class="title"><a href="#">Add More Item</a></h4>
+                        <h4 class="title"><a href="#">Add More Item</a></h4>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="navbar_side">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="./shop.html">Shop</a>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                  <div class="sub-menu single-column-menu">
+                    <ul>
+                      <li><a href="./blog.html">Blog</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="./about.html">About US</a>
+                </li>
+                <li>
+                  <a href="./contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- menu end here -->
+          <div class="header-item item-right">
+            <div class="mobile-menu-trigger">
+              <svg
+                width="60"
+                height="31"
+                viewBox="0 0 60 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="10" width="40" height="7" rx="3.5" fill="#F59305" />
+                <rect y="12" width="60" height="7" rx="3.5" fill="#F59305" />
+                <rect
+                  x="10"
+                  y="24"
+                  width="40"
+                  height="7"
+                  rx="3.5"
+                  fill="#F59305"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero  Start -->
+    <section id="blog_hero">
+      <div class="container">
+        <div class="blog_hero_heading">
+          <h1>Blog</h1>
+          <p>Discover our online grocery store</p>
+        </div>
+      </div>
+    </section>
+    <!-- Hero  End -->
+
+    <!-- Page Information Start -->
+    <div class="page_information">
+      <div class="container">
+        <div class="page_information_content">
+          <a href="./index.html">Home</a>
+          <a
+            ><svg
+              width="14"
+              height="24"
+              viewBox="0 0 14 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.598712 3.01096C0.251978 2.67451 0.195375 2.13827 0.46422 1.73684L0.96056 0.995719C1.30777 0.47728 2.03975 0.399926 2.48765 0.83434L14 12L2.48766 23.1657C2.03975 23.6001 1.30777 23.5227 0.96056 23.0043L0.46422 22.2632C0.195375 21.8617 0.251979 21.3255 0.598712 20.989L9.86243 12L0.598712 3.01096Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+          <a href="./blog.html"><span style="color: #f59305">Blog</span></a>
+        </div>
+      </div>
+    </div>
+    <!-- Page Information End -->
+
+    <!-- Blog Content Start -->
+    <section id="blog_content">
+      <div class="container">
+        <div class="blog_wrapper">
+          <div class="row">
+            <div class="col-lg-7 mt-5">
+              <div class="blog_content_main">
+                <div class="blog_content_main_menu">
+                  <div class="blog_content_main_heading">
+                    <h1>How many categories of products in our store?</h1>
+                  </div>
+                  <div class="blog_content_main_items">
+                    <div class="blog_content_main_items_list">
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.37792 18.0387C7.215 17.8758 6.95167 17.8758 6.78875 18.0387L6.25 18.5775L5.71125 18.0387C5.54833 17.8758 5.285 17.8758 5.12208 18.0387C4.95917 18.2017 4.95917 18.465 5.12208 18.6279L5.66083 19.1667L5.12208 19.7054C4.95917 19.8683 4.95917 20.1317 5.12208 20.2946C5.20333 20.3758 5.31 20.4167 5.41667 20.4167C5.52333 20.4167 5.63 20.3758 5.71125 20.2946L6.25 19.7558L6.78875 20.2946C6.87 20.3758 6.97667 20.4167 7.08333 20.4167C7.19 20.4167 7.29667 20.3758 7.37792 20.2946C7.54083 20.1317 7.54083 19.8683 7.37792 19.7054L6.83917 19.1667L7.37792 18.6279C7.54083 18.465 7.54083 18.2017 7.37792 18.0387ZM11.5446 18.0387C11.3817 17.8758 11.1183 17.8758 10.9554 18.0387L10.4167 18.5775L9.87792 18.0387C9.715 17.8758 9.45167 17.8758 9.28875 18.0387C9.12583 18.2017 9.12583 18.465 9.28875 18.6279L9.8275 19.1667L9.28875 19.7054C9.12583 19.8683 9.12583 20.1317 9.28875 20.2946C9.37 20.3758 9.47667 20.4167 9.58333 20.4167C9.69 20.4167 9.79667 20.3758 9.87792 20.2946L10.4167 19.7558L10.9554 20.2946C11.0367 20.3758 11.1433 20.4167 11.25 20.4167C11.3567 20.4167 11.4633 20.3758 11.5446 20.2946C11.7075 20.1317 11.7075 19.8683 11.5446 19.7054L11.0058 19.1667L11.5446 18.6279C11.7075 18.465 11.7075 18.2017 11.5446 18.0387ZM19.8779 13.8721C19.715 13.7092 19.4517 13.7092 19.2887 13.8721L18.75 14.4108L18.2113 13.8721C18.0483 13.7092 17.785 13.7092 17.6221 13.8721C17.4592 14.035 17.4592 14.2983 17.6221 14.4613L18.1608 15L17.6221 15.5387C17.4592 15.7017 17.4592 15.965 17.6221 16.1279C17.7033 16.2092 17.81 16.25 17.9167 16.25C18.0233 16.25 18.13 16.2092 18.2113 16.1279L18.75 15.5892L19.2887 16.1279C19.37 16.2092 19.4767 16.25 19.5833 16.25C19.69 16.25 19.7967 16.2092 19.8779 16.1279C20.0408 15.965 20.0408 15.7017 19.8779 15.5387L19.3392 15L19.8779 14.4613C20.0408 14.2983 20.0408 14.035 19.8779 13.8721ZM15.7113 9.70542C15.5483 9.5425 15.285 9.5425 15.1221 9.70542L14.5833 10.2442L14.0446 9.70542C13.8817 9.5425 13.6183 9.5425 13.4554 9.70542C13.2925 9.86833 13.2925 10.1317 13.4554 10.2946L13.9942 10.8333L13.4554 11.3721C13.2925 11.535 13.2925 11.7983 13.4554 11.9613C13.5367 12.0425 13.6433 12.0833 13.75 12.0833C13.8567 12.0833 13.9633 12.0425 14.0446 11.9613L14.5833 11.4225L15.1221 11.9613C15.2033 12.0425 15.31 12.0833 15.4167 12.0833C15.5233 12.0833 15.63 12.0425 15.7113 11.9613C15.8742 11.7983 15.8742 11.535 15.7113 11.3721L15.1725 10.8333L15.7113 10.2946C15.8742 10.1317 15.8742 9.86833 15.7113 9.70542ZM18.3333 11.25H19.1667V10.4167H18.3333V11.25ZM20 11.6667C20 11.8967 19.8133 12.0833 19.5833 12.0833H17.9167C17.6867 12.0833 17.5 11.8967 17.5 11.6667V10C17.5 9.77 17.6867 9.58333 17.9167 9.58333H19.5833C19.8133 9.58333 20 9.77 20 10V11.6667ZM14.1667 19.5833H15V18.75H14.1667V19.5833ZM15.8333 18.3333V20C15.8333 20.23 15.6467 20.4167 15.4167 20.4167H13.75C13.52 20.4167 13.3333 20.23 13.3333 20V18.3333C13.3333 18.1033 13.52 17.9167 13.75 17.9167H15.4167C15.6467 17.9167 15.8333 18.1033 15.8333 18.3333ZM14.1667 15.4167H15V14.5833H14.1667V15.4167ZM15.8333 15.8333C15.8333 16.0633 15.6467 16.25 15.4167 16.25H13.75C13.52 16.25 13.3333 16.0633 13.3333 15.8333V14.1667C13.3333 13.9367 13.52 13.75 13.75 13.75H15.4167C15.6467 13.75 15.8333 13.9367 15.8333 14.1667V15.8333ZM10 15.4167H10.8333V14.5833H10V15.4167ZM11.6667 15.8333C11.6667 16.0633 11.48 16.25 11.25 16.25H9.58333C9.35333 16.25 9.16667 16.0633 9.16667 15.8333V14.1667C9.16667 13.9367 9.35333 13.75 9.58333 13.75H11.25C11.48 13.75 11.6667 13.9367 11.6667 14.1667V15.8333ZM10 11.25H10.8333V10.4167H10V11.25ZM11.6667 11.6667C11.6667 11.8967 11.48 12.0833 11.25 12.0833H9.58333C9.35333 12.0833 9.16667 11.8967 9.16667 11.6667V10C9.16667 9.77 9.35333 9.58333 9.58333 9.58333H11.25C11.48 9.58333 11.6667 9.77 11.6667 10V11.6667ZM5.83333 15.4167H6.66667V14.5833H5.83333V15.4167ZM7.5 15.8333C7.5 16.0633 7.31333 16.25 7.08333 16.25H5.41667C5.18667 16.25 5 16.0633 5 15.8333V14.1667C5 13.9367 5.18667 13.75 5.41667 13.75H7.08333C7.31333 13.75 7.5 13.9367 7.5 14.1667V15.8333ZM5.83333 11.25H6.66667V10.4167H5.83333V11.25ZM7.5 11.6667C7.5 11.8967 7.31333 12.0833 7.08333 12.0833H5.41667C5.18667 12.0833 5 11.8967 5 11.6667V10C5 9.77 5.18667 9.58333 5.41667 9.58333H7.08333C7.31333 9.58333 7.5 9.77 7.5 10V11.6667ZM18.3333 2.91667C18.3333 3.14625 18.5204 3.33333 18.75 3.33333C18.9796 3.33333 19.1667 3.14625 19.1667 2.91667V1.25C19.1667 1.02042 18.9796 0.833333 18.75 0.833333C18.5204 0.833333 18.3333 1.02042 18.3333 1.25V2.91667ZM17.5 2.91667V1.25C17.5 0.560833 18.0608 0 18.75 0C19.4392 0 20 0.560833 20 1.25V2.91667C20 3.60583 19.4392 4.16667 18.75 4.16667C18.0608 4.16667 17.5 3.60583 17.5 2.91667ZM14.1667 2.91667C14.1667 3.14625 14.3537 3.33333 14.5833 3.33333C14.8129 3.33333 15 3.14625 15 2.91667V1.25C15 1.02042 14.8129 0.833333 14.5833 0.833333C14.3537 0.833333 14.1667 1.02042 14.1667 1.25V2.91667ZM13.3333 2.91667V1.25C13.3333 0.560833 13.8942 0 14.5833 0C15.2725 0 15.8333 0.560833 15.8333 1.25V2.91667C15.8333 3.60583 15.2725 4.16667 14.5833 4.16667C13.8942 4.16667 13.3333 3.60583 13.3333 2.91667ZM10 2.91667C10 3.14625 10.1871 3.33333 10.4167 3.33333C10.6462 3.33333 10.8333 3.14625 10.8333 2.91667V1.25C10.8333 1.02042 10.6462 0.833333 10.4167 0.833333C10.1871 0.833333 10 1.02042 10 1.25V2.91667ZM9.16667 2.91667V1.25C9.16667 0.560833 9.7275 0 10.4167 0C11.1058 0 11.6667 0.560833 11.6667 1.25V2.91667C11.6667 3.60583 11.1058 4.16667 10.4167 4.16667C9.7275 4.16667 9.16667 3.60583 9.16667 2.91667ZM5.83333 2.91667C5.83333 3.14625 6.02042 3.33333 6.25 3.33333C6.47958 3.33333 6.66667 3.14625 6.66667 2.91667V1.25C6.66667 1.02042 6.47958 0.833333 6.25 0.833333C6.02042 0.833333 5.83333 1.02042 5.83333 1.25V2.91667ZM5 2.91667V1.25C5 0.560833 5.56083 0 6.25 0C6.93917 0 7.5 0.560833 7.5 1.25V2.91667C7.5 3.60583 6.93917 4.16667 6.25 4.16667C5.56083 4.16667 5 3.60583 5 2.91667ZM20.1221 22.6221C19.9592 22.785 19.9592 23.0483 20.1221 23.2113C20.2033 23.2925 20.31 23.3333 20.4167 23.3333C20.5233 23.3333 20.63 23.2925 20.7113 23.2113L23.2113 20.7113C23.2896 20.6333 23.3333 20.5271 23.3333 20.4167V7.08333C23.3333 6.85333 23.1467 6.66667 22.9167 6.66667H2.08333C1.85333 6.66667 1.66667 6.85333 1.66667 7.08333V21.6667C1.66667 22.5858 2.41417 23.3333 3.33333 23.3333H18.75C18.98 23.3333 19.1667 23.1467 19.1667 22.9167V20.4167C19.1667 20.2279 19.3525 20 19.5833 20H21.25C21.48 20 21.6667 19.8133 21.6667 19.5833C21.6667 19.3533 21.48 19.1667 21.25 19.1667H19.5833C18.9175 19.1667 18.3333 19.7508 18.3333 20.4167V22.5H3.33333C2.87375 22.5 2.5 22.1262 2.5 21.6667V7.5H22.5V20.2442L20.1221 22.6221ZM22.9167 0.833333H21.25C21.02 0.833333 20.8333 1.02 20.8333 1.25C20.8333 1.48 21.02 1.66667 21.25 1.66667H22.9167C23.5242 1.66667 24.1667 2.30917 24.1667 2.91667V22.9167C24.1667 23.5242 23.5242 24.1667 22.9167 24.1667H2.08333C1.47583 24.1667 0.833333 23.5242 0.833333 22.9167V5.83333H22.9167C23.1467 5.83333 23.3333 5.64667 23.3333 5.41667C23.3333 5.18667 23.1467 5 22.9167 5H0.416667C0.186667 5 0 5.18667 0 5.41667V22.9167C0 23.9875 1.0125 25 2.08333 25H22.9167C23.9875 25 25 23.9875 25 22.9167V2.91667C25 1.84583 23.9875 0.833333 22.9167 0.833333ZM0 3.75V2.91667C0 1.84583 1.0125 0.833333 2.08333 0.833333H3.75C3.98 0.833333 4.16667 1.02 4.16667 1.25C4.16667 1.48 3.98 1.66667 3.75 1.66667H2.08333C1.47583 1.66667 0.833333 2.30917 0.833333 2.91667V3.75C0.833333 3.98 0.646667 4.16667 0.416667 4.16667C0.186667 4.16667 0 3.98 0 3.75Z"
+                          fill="#F59305"
+                        />
+                      </svg>
+                      <span>01 June, 2023</span>
+                    </div>
+                    <div class="blog_content_main_items_list">
+                      <svg
+                        width="29"
+                        height="25"
+                        viewBox="0 0 29 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.14636 5.88523H19.6687C19.987 5.88523 20.2452 5.62972 20.2452 5.31411C20.2452 4.9985 19.987 4.74219 19.6687 4.74219H8.14636C7.82803 4.74219 7.57031 4.9985 7.57031 5.31411C7.57031 5.62972 7.82803 5.88523 8.14636 5.88523Z"
+                          fill="#F59305"
+                        />
+                        <path
+                          d="M21.3403 8.62305H10.5422C10.224 8.62305 9.96582 8.87855 9.96582 9.19416C9.96582 9.50977 10.224 9.76609 10.5422 9.76609H21.3403C21.6586 9.76609 21.9163 9.50977 21.9163 9.19416C21.9163 8.87855 21.6586 8.62305 21.3403 8.62305Z"
+                          fill="#F59305"
+                        />
+                        <path
+                          d="M18.2662 12.5039H8.14636C7.82803 12.5039 7.57031 12.7594 7.57031 13.075C7.57031 13.3906 7.82803 13.6461 8.14636 13.6461H18.2662C18.5841 13.6461 18.8423 13.3906 18.8423 13.075C18.8422 12.7594 18.5841 12.5039 18.2662 12.5039Z"
+                          fill="#F59305"
+                        />
+                        <path
+                          d="M24.9583 0H4.04165C1.81352 0 0 1.66179 0 3.70539V15.1093C0 17.1521 1.81352 18.8139 4.04165 18.8139H16.3765L25.2774 25V18.8031C27.3573 18.653 29 17.0536 29 15.1093V3.70539C29 1.66179 27.1865 0 24.9583 0ZM27.271 15.1093C27.271 16.2069 26.233 17.0998 24.9583 17.0998H23.5484V21.7049L16.9221 17.0998H4.04158C2.76645 17.0998 1.72883 16.2069 1.72883 15.1093V3.70539C1.72883 2.60699 2.76645 1.71415 4.04158 1.71415H24.9583C26.233 1.71415 27.271 2.60706 27.271 3.70539V15.1093Z"
+                          fill="#F59305"
+                        />
+                      </svg>
+                      <span style="color: black">10</span> <span>Comments</span>
+                    </div>
+                    <div class="blog_content_main_items_list">
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.7446 15.2284L13.3826 13.3271V6.38601C13.3826 5.88051 12.9726 5.4707 12.4671 5.4707C11.9616 5.4707 11.5518 5.88071 11.5518 6.38601V13.8611C11.5518 13.8728 11.5549 13.8839 11.5551 13.8957C11.5563 13.9279 11.5601 13.9591 11.5647 13.991C11.5689 14.02 11.573 14.0489 11.5798 14.0771C11.5868 14.1052 11.5961 14.1322 11.6055 14.1595C11.6156 14.1885 11.6254 14.2166 11.6381 14.2442C11.6502 14.2707 11.6648 14.2953 11.6795 14.3204C11.6944 14.3457 11.7089 14.3709 11.726 14.3948C11.7435 14.4191 11.7634 14.4416 11.7833 14.4642C11.8026 14.4861 11.8215 14.5074 11.8428 14.5273C11.8641 14.5474 11.887 14.5651 11.9102 14.583C11.9353 14.6025 11.9606 14.621 11.9878 14.6379C11.9982 14.6441 12.0061 14.6524 12.0167 14.6582L15.8434 16.8222C15.9859 16.9026 16.1404 16.941 16.2932 16.941C16.6125 16.941 16.9225 16.7737 17.0908 16.4761C17.3396 16.0356 17.1845 15.4772 16.7446 15.2284Z"
+                          fill="#F59305"
+                        />
+                        <path
+                          d="M12.5 0C5.60743 0 0 5.60743 0 12.5C0 19.3924 5.60743 25 12.5 25C19.3924 25 25 19.3924 25 12.5C25 5.60743 19.3924 0 12.5 0ZM13.2957 22.9774V21.1538H11.7043V22.9774C6.77659 22.6064 2.7873 18.8252 2.09719 13.992H3.97894V12.4005H1.99196C2.04328 6.91823 6.31207 2.42862 11.7043 2.02259V3.84625H13.2957V2.02259C18.6877 2.42862 22.9567 6.91823 23.008 12.4005H21.1207V13.992H22.9028C22.2127 18.8252 18.2236 22.6064 13.2957 22.9774Z"
+                          fill="#F59305"
+                        />
+                      </svg>
+                      <span>20 mins ago</span>
+                    </div>
+                  </div>
+                  <div class="blog_content_image">
+                    <img
+                      src="./assets/image/blog_all_image/blog_image_05.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="blog_content_main_items_text">
+                    <p>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look even slightly believable. If you are going to
+                      use a passage of Lorem Ipsum, you need to be sure there
+                      isn't anything embarrassing hidden in the middle of text.
+                      All the Lorem Ipsum generators on the Internet tend to
+                      repeat predefined chunks as necessary, making this the
+                      first true generator on the Internet. It uses a dictionary
+                      of over 200 Latin words, combined with a handful of model
+                      sentence structures, to generate Lorem Ipsum which looks
+                      reasonable.
+                    </p>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look even slightly believable. If you are going to
+                      use a passage of Lorem Ipsum, you need to be sure there
+                      isn't anything embarrassing hidden in the middle of text.
+                      All the Lorem Ipsum generators on the Internet tend to
+                      repeat predefined chunks as necessary, making this the
+                      first true generator on the Internet. It uses a dictionary
+                      of over 200 Latin words, combined with a handful of model
+                      sentence structures, to generate Lorem Ipsum which looks
+                      reasonable.
+                    </p>
+                  </div>
+                  <div class="blog_content_main_items_btn">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="content_main_items_btn_wrapper">
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Popular Product</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Fruits & Vegetables</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Milk & Juices</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Meats & Protein</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Beverage & Drinks</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Chocolate Box</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Bakery</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Coffee & Snacks</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Condiments / Spices</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Oils & Vinegars</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="content_main_items_btn_wrapper">
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Canned & Dried Goods</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Personal Care</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Paper & Warp</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">House Hold Supplies</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Baby Items</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="content_main_items_btn_wrapper">
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Flour/ Atta</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Dal/ Lentils & Legumes</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Add More Item</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Add More Item</a>
+                          </div>
+                          <div class="content_main_items_btn_wrapper_list">
+                            <svg
+                              width="15"
+                              height="15"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="7.5"
+                                fill="#F59305"
+                              />
+                            </svg>
+                            <a href="#">Add More Item</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single_blog_page_form">
+                    <div class="single_blog_page_form_heading">
+                      <h1>
+                        LEAVE <span style="color: #f59305">A REPLAY</span>
+                      </h1>
+                    </div>
+                    <form action="">
+                      <input type="email" placeholder="E-mail" />
+                      <textarea
+                        name=""
+                        id=""
+                        placeholder="Type comments"
+                      ></textarea>
+                      <div class="message_box_content_cheakbox">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" />
+                        <label for="vehicle1">
+                          Save the details for the next time I comment.</label
+                        >
+                      </div>
+                    </form>
+                    <div class="message_box_content_cheakbox_btn mt-4">
+                      <a href="#">Send Massage</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4 mt-5">
+              <div class="blog_content_input">
+                <input type="text" placeholder="Search..." />
+                <button>
+                  <svg
+                    width="31"
+                    height="31"
+                    viewBox="0 0 31 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M29.5923 22.9712L26.3639 19.6772C25.6695 19.0196 24.7935 18.5839 23.8486 18.426C22.9037 18.2682 21.933 18.3955 21.0613 18.7916L19.6576 17.3932C21.3117 15.1914 22.0671 12.4471 21.7717 9.71272C21.4764 6.97836 20.1523 4.45697 18.0659 2.65613C15.9796 0.855284 13.2859 -0.0912924 10.5272 0.00694779C7.76849 0.105188 5.14954 1.24095 3.19758 3.1856C1.24562 5.13025 0.105583 7.73939 0.00697392 10.4878C-0.0916356 13.2362 0.8585 15.9197 2.66611 17.9983C4.47373 20.0768 7.0046 21.396 9.74924 21.6902C12.4939 21.9844 15.2485 21.2318 17.4586 19.584L18.8466 20.9668C18.4023 21.8364 18.243 22.8229 18.3913 23.7874C18.5396 24.7519 18.988 25.6457 19.6732 26.3428L22.9796 29.6368C23.8568 30.5097 25.046 31 26.2859 31C27.5258 31 28.715 30.5097 29.5923 29.6368C30.0379 29.2027 30.392 28.6842 30.6337 28.1119C30.8755 27.5396 31 26.9249 31 26.304C31 25.6831 30.8755 25.0684 30.6337 24.4961C30.392 23.9237 30.0379 23.4053 29.5923 22.9712ZM16.3669 16.3833C15.2755 17.4678 13.886 18.2057 12.3739 18.5039C10.8618 18.8021 9.29487 18.6471 7.87112 18.0585C6.44737 17.4699 5.23065 16.4742 4.37467 15.197C3.51869 13.9199 3.06184 12.4186 3.06184 10.883C3.06184 9.34727 3.51869 7.84604 4.37467 6.56889C5.23065 5.29175 6.44737 4.296 7.87112 3.70742C9.29487 3.11884 10.8618 2.96385 12.3739 3.26202C13.886 3.56018 15.2755 4.29814 16.3669 5.38266C17.0931 6.10431 17.6692 6.96161 18.0624 7.90544C18.4555 8.84927 18.6578 9.86109 18.6578 10.883C18.6578 11.9048 18.4555 12.9166 18.0624 13.8605C17.6692 14.8043 17.0931 15.6616 16.3669 16.3833ZM27.3932 27.3683C27.2482 27.5139 27.0758 27.6295 26.8857 27.7084C26.6957 27.7873 26.4918 27.8279 26.2859 27.8279C26.08 27.8279 25.8762 27.7873 25.6861 27.7084C25.4961 27.6295 25.3236 27.5139 25.1786 27.3683L21.8723 24.0744C21.7261 23.9299 21.6101 23.7581 21.5309 23.5687C21.4517 23.3794 21.4109 23.1763 21.4109 22.9712C21.4109 22.7661 21.4517 22.563 21.5309 22.3736C21.6101 22.1843 21.7261 22.0125 21.8723 21.868C22.0172 21.7224 22.1897 21.6068 22.3798 21.5279C22.5698 21.449 22.7737 21.4084 22.9796 21.4084C23.1855 21.4084 23.3893 21.449 23.5794 21.5279C23.7694 21.6068 23.9419 21.7224 24.0869 21.868L27.3932 25.162C27.5394 25.3064 27.6554 25.4783 27.7346 25.6676C27.8138 25.8569 27.8546 26.06 27.8546 26.2651C27.8546 26.4703 27.8138 26.6733 27.7346 26.8627C27.6554 27.052 27.5394 27.2239 27.3932 27.3683Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="recently_blog_heading">
+                <h1>Recent <span style="color: #f59305">Blog</span></h1>
+              </div>
+              <div class="recently_blog_wrapper mt-4">
+                <div class="recently_blog_wrapper_content">
+                  <div class="recently_blog_wrapper_content_img">
+                    <img
+                      src="./assets/image/blog_all_image/blog_image_08.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="blog_content_main_items_list">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.37792 18.0387C7.215 17.8758 6.95167 17.8758 6.78875 18.0387L6.25 18.5775L5.71125 18.0387C5.54833 17.8758 5.285 17.8758 5.12208 18.0387C4.95917 18.2017 4.95917 18.465 5.12208 18.6279L5.66083 19.1667L5.12208 19.7054C4.95917 19.8683 4.95917 20.1317 5.12208 20.2946C5.20333 20.3758 5.31 20.4167 5.41667 20.4167C5.52333 20.4167 5.63 20.3758 5.71125 20.2946L6.25 19.7558L6.78875 20.2946C6.87 20.3758 6.97667 20.4167 7.08333 20.4167C7.19 20.4167 7.29667 20.3758 7.37792 20.2946C7.54083 20.1317 7.54083 19.8683 7.37792 19.7054L6.83917 19.1667L7.37792 18.6279C7.54083 18.465 7.54083 18.2017 7.37792 18.0387ZM11.5446 18.0387C11.3817 17.8758 11.1183 17.8758 10.9554 18.0387L10.4167 18.5775L9.87792 18.0387C9.715 17.8758 9.45167 17.8758 9.28875 18.0387C9.12583 18.2017 9.12583 18.465 9.28875 18.6279L9.8275 19.1667L9.28875 19.7054C9.12583 19.8683 9.12583 20.1317 9.28875 20.2946C9.37 20.3758 9.47667 20.4167 9.58333 20.4167C9.69 20.4167 9.79667 20.3758 9.87792 20.2946L10.4167 19.7558L10.9554 20.2946C11.0367 20.3758 11.1433 20.4167 11.25 20.4167C11.3567 20.4167 11.4633 20.3758 11.5446 20.2946C11.7075 20.1317 11.7075 19.8683 11.5446 19.7054L11.0058 19.1667L11.5446 18.6279C11.7075 18.465 11.7075 18.2017 11.5446 18.0387ZM19.8779 13.8721C19.715 13.7092 19.4517 13.7092 19.2887 13.8721L18.75 14.4108L18.2113 13.8721C18.0483 13.7092 17.785 13.7092 17.6221 13.8721C17.4592 14.035 17.4592 14.2983 17.6221 14.4613L18.1608 15L17.6221 15.5387C17.4592 15.7017 17.4592 15.965 17.6221 16.1279C17.7033 16.2092 17.81 16.25 17.9167 16.25C18.0233 16.25 18.13 16.2092 18.2113 16.1279L18.75 15.5892L19.2887 16.1279C19.37 16.2092 19.4767 16.25 19.5833 16.25C19.69 16.25 19.7967 16.2092 19.8779 16.1279C20.0408 15.965 20.0408 15.7017 19.8779 15.5387L19.3392 15L19.8779 14.4613C20.0408 14.2983 20.0408 14.035 19.8779 13.8721ZM15.7113 9.70542C15.5483 9.5425 15.285 9.5425 15.1221 9.70542L14.5833 10.2442L14.0446 9.70542C13.8817 9.5425 13.6183 9.5425 13.4554 9.70542C13.2925 9.86833 13.2925 10.1317 13.4554 10.2946L13.9942 10.8333L13.4554 11.3721C13.2925 11.535 13.2925 11.7983 13.4554 11.9613C13.5367 12.0425 13.6433 12.0833 13.75 12.0833C13.8567 12.0833 13.9633 12.0425 14.0446 11.9613L14.5833 11.4225L15.1221 11.9613C15.2033 12.0425 15.31 12.0833 15.4167 12.0833C15.5233 12.0833 15.63 12.0425 15.7113 11.9613C15.8742 11.7983 15.8742 11.535 15.7113 11.3721L15.1725 10.8333L15.7113 10.2946C15.8742 10.1317 15.8742 9.86833 15.7113 9.70542ZM18.3333 11.25H19.1667V10.4167H18.3333V11.25ZM20 11.6667C20 11.8967 19.8133 12.0833 19.5833 12.0833H17.9167C17.6867 12.0833 17.5 11.8967 17.5 11.6667V10C17.5 9.77 17.6867 9.58333 17.9167 9.58333H19.5833C19.8133 9.58333 20 9.77 20 10V11.6667ZM14.1667 19.5833H15V18.75H14.1667V19.5833ZM15.8333 18.3333V20C15.8333 20.23 15.6467 20.4167 15.4167 20.4167H13.75C13.52 20.4167 13.3333 20.23 13.3333 20V18.3333C13.3333 18.1033 13.52 17.9167 13.75 17.9167H15.4167C15.6467 17.9167 15.8333 18.1033 15.8333 18.3333ZM14.1667 15.4167H15V14.5833H14.1667V15.4167ZM15.8333 15.8333C15.8333 16.0633 15.6467 16.25 15.4167 16.25H13.75C13.52 16.25 13.3333 16.0633 13.3333 15.8333V14.1667C13.3333 13.9367 13.52 13.75 13.75 13.75H15.4167C15.6467 13.75 15.8333 13.9367 15.8333 14.1667V15.8333ZM10 15.4167H10.8333V14.5833H10V15.4167ZM11.6667 15.8333C11.6667 16.0633 11.48 16.25 11.25 16.25H9.58333C9.35333 16.25 9.16667 16.0633 9.16667 15.8333V14.1667C9.16667 13.9367 9.35333 13.75 9.58333 13.75H11.25C11.48 13.75 11.6667 13.9367 11.6667 14.1667V15.8333ZM10 11.25H10.8333V10.4167H10V11.25ZM11.6667 11.6667C11.6667 11.8967 11.48 12.0833 11.25 12.0833H9.58333C9.35333 12.0833 9.16667 11.8967 9.16667 11.6667V10C9.16667 9.77 9.35333 9.58333 9.58333 9.58333H11.25C11.48 9.58333 11.6667 9.77 11.6667 10V11.6667ZM5.83333 15.4167H6.66667V14.5833H5.83333V15.4167ZM7.5 15.8333C7.5 16.0633 7.31333 16.25 7.08333 16.25H5.41667C5.18667 16.25 5 16.0633 5 15.8333V14.1667C5 13.9367 5.18667 13.75 5.41667 13.75H7.08333C7.31333 13.75 7.5 13.9367 7.5 14.1667V15.8333ZM5.83333 11.25H6.66667V10.4167H5.83333V11.25ZM7.5 11.6667C7.5 11.8967 7.31333 12.0833 7.08333 12.0833H5.41667C5.18667 12.0833 5 11.8967 5 11.6667V10C5 9.77 5.18667 9.58333 5.41667 9.58333H7.08333C7.31333 9.58333 7.5 9.77 7.5 10V11.6667ZM18.3333 2.91667C18.3333 3.14625 18.5204 3.33333 18.75 3.33333C18.9796 3.33333 19.1667 3.14625 19.1667 2.91667V1.25C19.1667 1.02042 18.9796 0.833333 18.75 0.833333C18.5204 0.833333 18.3333 1.02042 18.3333 1.25V2.91667ZM17.5 2.91667V1.25C17.5 0.560833 18.0608 0 18.75 0C19.4392 0 20 0.560833 20 1.25V2.91667C20 3.60583 19.4392 4.16667 18.75 4.16667C18.0608 4.16667 17.5 3.60583 17.5 2.91667ZM14.1667 2.91667C14.1667 3.14625 14.3537 3.33333 14.5833 3.33333C14.8129 3.33333 15 3.14625 15 2.91667V1.25C15 1.02042 14.8129 0.833333 14.5833 0.833333C14.3537 0.833333 14.1667 1.02042 14.1667 1.25V2.91667ZM13.3333 2.91667V1.25C13.3333 0.560833 13.8942 0 14.5833 0C15.2725 0 15.8333 0.560833 15.8333 1.25V2.91667C15.8333 3.60583 15.2725 4.16667 14.5833 4.16667C13.8942 4.16667 13.3333 3.60583 13.3333 2.91667ZM10 2.91667C10 3.14625 10.1871 3.33333 10.4167 3.33333C10.6462 3.33333 10.8333 3.14625 10.8333 2.91667V1.25C10.8333 1.02042 10.6462 0.833333 10.4167 0.833333C10.1871 0.833333 10 1.02042 10 1.25V2.91667ZM9.16667 2.91667V1.25C9.16667 0.560833 9.7275 0 10.4167 0C11.1058 0 11.6667 0.560833 11.6667 1.25V2.91667C11.6667 3.60583 11.1058 4.16667 10.4167 4.16667C9.7275 4.16667 9.16667 3.60583 9.16667 2.91667ZM5.83333 2.91667C5.83333 3.14625 6.02042 3.33333 6.25 3.33333C6.47958 3.33333 6.66667 3.14625 6.66667 2.91667V1.25C6.66667 1.02042 6.47958 0.833333 6.25 0.833333C6.02042 0.833333 5.83333 1.02042 5.83333 1.25V2.91667ZM5 2.91667V1.25C5 0.560833 5.56083 0 6.25 0C6.93917 0 7.5 0.560833 7.5 1.25V2.91667C7.5 3.60583 6.93917 4.16667 6.25 4.16667C5.56083 4.16667 5 3.60583 5 2.91667ZM20.1221 22.6221C19.9592 22.785 19.9592 23.0483 20.1221 23.2113C20.2033 23.2925 20.31 23.3333 20.4167 23.3333C20.5233 23.3333 20.63 23.2925 20.7113 23.2113L23.2113 20.7113C23.2896 20.6333 23.3333 20.5271 23.3333 20.4167V7.08333C23.3333 6.85333 23.1467 6.66667 22.9167 6.66667H2.08333C1.85333 6.66667 1.66667 6.85333 1.66667 7.08333V21.6667C1.66667 22.5858 2.41417 23.3333 3.33333 23.3333H18.75C18.98 23.3333 19.1667 23.1467 19.1667 22.9167V20.4167C19.1667 20.2279 19.3525 20 19.5833 20H21.25C21.48 20 21.6667 19.8133 21.6667 19.5833C21.6667 19.3533 21.48 19.1667 21.25 19.1667H19.5833C18.9175 19.1667 18.3333 19.7508 18.3333 20.4167V22.5H3.33333C2.87375 22.5 2.5 22.1262 2.5 21.6667V7.5H22.5V20.2442L20.1221 22.6221ZM22.9167 0.833333H21.25C21.02 0.833333 20.8333 1.02 20.8333 1.25C20.8333 1.48 21.02 1.66667 21.25 1.66667H22.9167C23.5242 1.66667 24.1667 2.30917 24.1667 2.91667V22.9167C24.1667 23.5242 23.5242 24.1667 22.9167 24.1667H2.08333C1.47583 24.1667 0.833333 23.5242 0.833333 22.9167V5.83333H22.9167C23.1467 5.83333 23.3333 5.64667 23.3333 5.41667C23.3333 5.18667 23.1467 5 22.9167 5H0.416667C0.186667 5 0 5.18667 0 5.41667V22.9167C0 23.9875 1.0125 25 2.08333 25H22.9167C23.9875 25 25 23.9875 25 22.9167V2.91667C25 1.84583 23.9875 0.833333 22.9167 0.833333ZM0 3.75V2.91667C0 1.84583 1.0125 0.833333 2.08333 0.833333H3.75C3.98 0.833333 4.16667 1.02 4.16667 1.25C4.16667 1.48 3.98 1.66667 3.75 1.66667H2.08333C1.47583 1.66667 0.833333 2.30917 0.833333 2.91667V3.75C0.833333 3.98 0.646667 4.16667 0.416667 4.16667C0.186667 4.16667 0 3.98 0 3.75Z"
+                        fill="#F59305"
+                      />
+                    </svg>
+                    <span>01 June, 2023</span>
+                  </div>
+                  <div class="recently_blog_wrapper_content_heading">
+                    <h1>How manage business online reputation</h1>
+                  </div>
+                </div>
+                <div class="recently_blog_wrapper_content">
+                  <div class="recently_blog_wrapper_content_img">
+                    <img
+                      src="./assets/image/blog_all_image/blog_image_07.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="blog_content_main_items_list">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.37792 18.0387C7.215 17.8758 6.95167 17.8758 6.78875 18.0387L6.25 18.5775L5.71125 18.0387C5.54833 17.8758 5.285 17.8758 5.12208 18.0387C4.95917 18.2017 4.95917 18.465 5.12208 18.6279L5.66083 19.1667L5.12208 19.7054C4.95917 19.8683 4.95917 20.1317 5.12208 20.2946C5.20333 20.3758 5.31 20.4167 5.41667 20.4167C5.52333 20.4167 5.63 20.3758 5.71125 20.2946L6.25 19.7558L6.78875 20.2946C6.87 20.3758 6.97667 20.4167 7.08333 20.4167C7.19 20.4167 7.29667 20.3758 7.37792 20.2946C7.54083 20.1317 7.54083 19.8683 7.37792 19.7054L6.83917 19.1667L7.37792 18.6279C7.54083 18.465 7.54083 18.2017 7.37792 18.0387ZM11.5446 18.0387C11.3817 17.8758 11.1183 17.8758 10.9554 18.0387L10.4167 18.5775L9.87792 18.0387C9.715 17.8758 9.45167 17.8758 9.28875 18.0387C9.12583 18.2017 9.12583 18.465 9.28875 18.6279L9.8275 19.1667L9.28875 19.7054C9.12583 19.8683 9.12583 20.1317 9.28875 20.2946C9.37 20.3758 9.47667 20.4167 9.58333 20.4167C9.69 20.4167 9.79667 20.3758 9.87792 20.2946L10.4167 19.7558L10.9554 20.2946C11.0367 20.3758 11.1433 20.4167 11.25 20.4167C11.3567 20.4167 11.4633 20.3758 11.5446 20.2946C11.7075 20.1317 11.7075 19.8683 11.5446 19.7054L11.0058 19.1667L11.5446 18.6279C11.7075 18.465 11.7075 18.2017 11.5446 18.0387ZM19.8779 13.8721C19.715 13.7092 19.4517 13.7092 19.2887 13.8721L18.75 14.4108L18.2113 13.8721C18.0483 13.7092 17.785 13.7092 17.6221 13.8721C17.4592 14.035 17.4592 14.2983 17.6221 14.4613L18.1608 15L17.6221 15.5387C17.4592 15.7017 17.4592 15.965 17.6221 16.1279C17.7033 16.2092 17.81 16.25 17.9167 16.25C18.0233 16.25 18.13 16.2092 18.2113 16.1279L18.75 15.5892L19.2887 16.1279C19.37 16.2092 19.4767 16.25 19.5833 16.25C19.69 16.25 19.7967 16.2092 19.8779 16.1279C20.0408 15.965 20.0408 15.7017 19.8779 15.5387L19.3392 15L19.8779 14.4613C20.0408 14.2983 20.0408 14.035 19.8779 13.8721ZM15.7113 9.70542C15.5483 9.5425 15.285 9.5425 15.1221 9.70542L14.5833 10.2442L14.0446 9.70542C13.8817 9.5425 13.6183 9.5425 13.4554 9.70542C13.2925 9.86833 13.2925 10.1317 13.4554 10.2946L13.9942 10.8333L13.4554 11.3721C13.2925 11.535 13.2925 11.7983 13.4554 11.9613C13.5367 12.0425 13.6433 12.0833 13.75 12.0833C13.8567 12.0833 13.9633 12.0425 14.0446 11.9613L14.5833 11.4225L15.1221 11.9613C15.2033 12.0425 15.31 12.0833 15.4167 12.0833C15.5233 12.0833 15.63 12.0425 15.7113 11.9613C15.8742 11.7983 15.8742 11.535 15.7113 11.3721L15.1725 10.8333L15.7113 10.2946C15.8742 10.1317 15.8742 9.86833 15.7113 9.70542ZM18.3333 11.25H19.1667V10.4167H18.3333V11.25ZM20 11.6667C20 11.8967 19.8133 12.0833 19.5833 12.0833H17.9167C17.6867 12.0833 17.5 11.8967 17.5 11.6667V10C17.5 9.77 17.6867 9.58333 17.9167 9.58333H19.5833C19.8133 9.58333 20 9.77 20 10V11.6667ZM14.1667 19.5833H15V18.75H14.1667V19.5833ZM15.8333 18.3333V20C15.8333 20.23 15.6467 20.4167 15.4167 20.4167H13.75C13.52 20.4167 13.3333 20.23 13.3333 20V18.3333C13.3333 18.1033 13.52 17.9167 13.75 17.9167H15.4167C15.6467 17.9167 15.8333 18.1033 15.8333 18.3333ZM14.1667 15.4167H15V14.5833H14.1667V15.4167ZM15.8333 15.8333C15.8333 16.0633 15.6467 16.25 15.4167 16.25H13.75C13.52 16.25 13.3333 16.0633 13.3333 15.8333V14.1667C13.3333 13.9367 13.52 13.75 13.75 13.75H15.4167C15.6467 13.75 15.8333 13.9367 15.8333 14.1667V15.8333ZM10 15.4167H10.8333V14.5833H10V15.4167ZM11.6667 15.8333C11.6667 16.0633 11.48 16.25 11.25 16.25H9.58333C9.35333 16.25 9.16667 16.0633 9.16667 15.8333V14.1667C9.16667 13.9367 9.35333 13.75 9.58333 13.75H11.25C11.48 13.75 11.6667 13.9367 11.6667 14.1667V15.8333ZM10 11.25H10.8333V10.4167H10V11.25ZM11.6667 11.6667C11.6667 11.8967 11.48 12.0833 11.25 12.0833H9.58333C9.35333 12.0833 9.16667 11.8967 9.16667 11.6667V10C9.16667 9.77 9.35333 9.58333 9.58333 9.58333H11.25C11.48 9.58333 11.6667 9.77 11.6667 10V11.6667ZM5.83333 15.4167H6.66667V14.5833H5.83333V15.4167ZM7.5 15.8333C7.5 16.0633 7.31333 16.25 7.08333 16.25H5.41667C5.18667 16.25 5 16.0633 5 15.8333V14.1667C5 13.9367 5.18667 13.75 5.41667 13.75H7.08333C7.31333 13.75 7.5 13.9367 7.5 14.1667V15.8333ZM5.83333 11.25H6.66667V10.4167H5.83333V11.25ZM7.5 11.6667C7.5 11.8967 7.31333 12.0833 7.08333 12.0833H5.41667C5.18667 12.0833 5 11.8967 5 11.6667V10C5 9.77 5.18667 9.58333 5.41667 9.58333H7.08333C7.31333 9.58333 7.5 9.77 7.5 10V11.6667ZM18.3333 2.91667C18.3333 3.14625 18.5204 3.33333 18.75 3.33333C18.9796 3.33333 19.1667 3.14625 19.1667 2.91667V1.25C19.1667 1.02042 18.9796 0.833333 18.75 0.833333C18.5204 0.833333 18.3333 1.02042 18.3333 1.25V2.91667ZM17.5 2.91667V1.25C17.5 0.560833 18.0608 0 18.75 0C19.4392 0 20 0.560833 20 1.25V2.91667C20 3.60583 19.4392 4.16667 18.75 4.16667C18.0608 4.16667 17.5 3.60583 17.5 2.91667ZM14.1667 2.91667C14.1667 3.14625 14.3537 3.33333 14.5833 3.33333C14.8129 3.33333 15 3.14625 15 2.91667V1.25C15 1.02042 14.8129 0.833333 14.5833 0.833333C14.3537 0.833333 14.1667 1.02042 14.1667 1.25V2.91667ZM13.3333 2.91667V1.25C13.3333 0.560833 13.8942 0 14.5833 0C15.2725 0 15.8333 0.560833 15.8333 1.25V2.91667C15.8333 3.60583 15.2725 4.16667 14.5833 4.16667C13.8942 4.16667 13.3333 3.60583 13.3333 2.91667ZM10 2.91667C10 3.14625 10.1871 3.33333 10.4167 3.33333C10.6462 3.33333 10.8333 3.14625 10.8333 2.91667V1.25C10.8333 1.02042 10.6462 0.833333 10.4167 0.833333C10.1871 0.833333 10 1.02042 10 1.25V2.91667ZM9.16667 2.91667V1.25C9.16667 0.560833 9.7275 0 10.4167 0C11.1058 0 11.6667 0.560833 11.6667 1.25V2.91667C11.6667 3.60583 11.1058 4.16667 10.4167 4.16667C9.7275 4.16667 9.16667 3.60583 9.16667 2.91667ZM5.83333 2.91667C5.83333 3.14625 6.02042 3.33333 6.25 3.33333C6.47958 3.33333 6.66667 3.14625 6.66667 2.91667V1.25C6.66667 1.02042 6.47958 0.833333 6.25 0.833333C6.02042 0.833333 5.83333 1.02042 5.83333 1.25V2.91667ZM5 2.91667V1.25C5 0.560833 5.56083 0 6.25 0C6.93917 0 7.5 0.560833 7.5 1.25V2.91667C7.5 3.60583 6.93917 4.16667 6.25 4.16667C5.56083 4.16667 5 3.60583 5 2.91667ZM20.1221 22.6221C19.9592 22.785 19.9592 23.0483 20.1221 23.2113C20.2033 23.2925 20.31 23.3333 20.4167 23.3333C20.5233 23.3333 20.63 23.2925 20.7113 23.2113L23.2113 20.7113C23.2896 20.6333 23.3333 20.5271 23.3333 20.4167V7.08333C23.3333 6.85333 23.1467 6.66667 22.9167 6.66667H2.08333C1.85333 6.66667 1.66667 6.85333 1.66667 7.08333V21.6667C1.66667 22.5858 2.41417 23.3333 3.33333 23.3333H18.75C18.98 23.3333 19.1667 23.1467 19.1667 22.9167V20.4167C19.1667 20.2279 19.3525 20 19.5833 20H21.25C21.48 20 21.6667 19.8133 21.6667 19.5833C21.6667 19.3533 21.48 19.1667 21.25 19.1667H19.5833C18.9175 19.1667 18.3333 19.7508 18.3333 20.4167V22.5H3.33333C2.87375 22.5 2.5 22.1262 2.5 21.6667V7.5H22.5V20.2442L20.1221 22.6221ZM22.9167 0.833333H21.25C21.02 0.833333 20.8333 1.02 20.8333 1.25C20.8333 1.48 21.02 1.66667 21.25 1.66667H22.9167C23.5242 1.66667 24.1667 2.30917 24.1667 2.91667V22.9167C24.1667 23.5242 23.5242 24.1667 22.9167 24.1667H2.08333C1.47583 24.1667 0.833333 23.5242 0.833333 22.9167V5.83333H22.9167C23.1467 5.83333 23.3333 5.64667 23.3333 5.41667C23.3333 5.18667 23.1467 5 22.9167 5H0.416667C0.186667 5 0 5.18667 0 5.41667V22.9167C0 23.9875 1.0125 25 2.08333 25H22.9167C23.9875 25 25 23.9875 25 22.9167V2.91667C25 1.84583 23.9875 0.833333 22.9167 0.833333ZM0 3.75V2.91667C0 1.84583 1.0125 0.833333 2.08333 0.833333H3.75C3.98 0.833333 4.16667 1.02 4.16667 1.25C4.16667 1.48 3.98 1.66667 3.75 1.66667H2.08333C1.47583 1.66667 0.833333 2.30917 0.833333 2.91667V3.75C0.833333 3.98 0.646667 4.16667 0.416667 4.16667C0.186667 4.16667 0 3.98 0 3.75Z"
+                        fill="#F59305"
+                      />
+                    </svg>
+                    <span>01 June, 2023</span>
+                  </div>
+                  <div class="recently_blog_wrapper_content_heading">
+                    <h1>
+                      Our all product can check product expiry date in
+                      everytime.
+                    </h1>
+                  </div>
+                </div>
+                <div class="recently_blog_wrapper_content">
+                  <div class="recently_blog_wrapper_content_img">
+                    <img
+                      src="./assets/image/blog_all_image/blog_image_09.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="blog_content_main_items_list">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.37792 18.0387C7.215 17.8758 6.95167 17.8758 6.78875 18.0387L6.25 18.5775L5.71125 18.0387C5.54833 17.8758 5.285 17.8758 5.12208 18.0387C4.95917 18.2017 4.95917 18.465 5.12208 18.6279L5.66083 19.1667L5.12208 19.7054C4.95917 19.8683 4.95917 20.1317 5.12208 20.2946C5.20333 20.3758 5.31 20.4167 5.41667 20.4167C5.52333 20.4167 5.63 20.3758 5.71125 20.2946L6.25 19.7558L6.78875 20.2946C6.87 20.3758 6.97667 20.4167 7.08333 20.4167C7.19 20.4167 7.29667 20.3758 7.37792 20.2946C7.54083 20.1317 7.54083 19.8683 7.37792 19.7054L6.83917 19.1667L7.37792 18.6279C7.54083 18.465 7.54083 18.2017 7.37792 18.0387ZM11.5446 18.0387C11.3817 17.8758 11.1183 17.8758 10.9554 18.0387L10.4167 18.5775L9.87792 18.0387C9.715 17.8758 9.45167 17.8758 9.28875 18.0387C9.12583 18.2017 9.12583 18.465 9.28875 18.6279L9.8275 19.1667L9.28875 19.7054C9.12583 19.8683 9.12583 20.1317 9.28875 20.2946C9.37 20.3758 9.47667 20.4167 9.58333 20.4167C9.69 20.4167 9.79667 20.3758 9.87792 20.2946L10.4167 19.7558L10.9554 20.2946C11.0367 20.3758 11.1433 20.4167 11.25 20.4167C11.3567 20.4167 11.4633 20.3758 11.5446 20.2946C11.7075 20.1317 11.7075 19.8683 11.5446 19.7054L11.0058 19.1667L11.5446 18.6279C11.7075 18.465 11.7075 18.2017 11.5446 18.0387ZM19.8779 13.8721C19.715 13.7092 19.4517 13.7092 19.2887 13.8721L18.75 14.4108L18.2113 13.8721C18.0483 13.7092 17.785 13.7092 17.6221 13.8721C17.4592 14.035 17.4592 14.2983 17.6221 14.4613L18.1608 15L17.6221 15.5387C17.4592 15.7017 17.4592 15.965 17.6221 16.1279C17.7033 16.2092 17.81 16.25 17.9167 16.25C18.0233 16.25 18.13 16.2092 18.2113 16.1279L18.75 15.5892L19.2887 16.1279C19.37 16.2092 19.4767 16.25 19.5833 16.25C19.69 16.25 19.7967 16.2092 19.8779 16.1279C20.0408 15.965 20.0408 15.7017 19.8779 15.5387L19.3392 15L19.8779 14.4613C20.0408 14.2983 20.0408 14.035 19.8779 13.8721ZM15.7113 9.70542C15.5483 9.5425 15.285 9.5425 15.1221 9.70542L14.5833 10.2442L14.0446 9.70542C13.8817 9.5425 13.6183 9.5425 13.4554 9.70542C13.2925 9.86833 13.2925 10.1317 13.4554 10.2946L13.9942 10.8333L13.4554 11.3721C13.2925 11.535 13.2925 11.7983 13.4554 11.9613C13.5367 12.0425 13.6433 12.0833 13.75 12.0833C13.8567 12.0833 13.9633 12.0425 14.0446 11.9613L14.5833 11.4225L15.1221 11.9613C15.2033 12.0425 15.31 12.0833 15.4167 12.0833C15.5233 12.0833 15.63 12.0425 15.7113 11.9613C15.8742 11.7983 15.8742 11.535 15.7113 11.3721L15.1725 10.8333L15.7113 10.2946C15.8742 10.1317 15.8742 9.86833 15.7113 9.70542ZM18.3333 11.25H19.1667V10.4167H18.3333V11.25ZM20 11.6667C20 11.8967 19.8133 12.0833 19.5833 12.0833H17.9167C17.6867 12.0833 17.5 11.8967 17.5 11.6667V10C17.5 9.77 17.6867 9.58333 17.9167 9.58333H19.5833C19.8133 9.58333 20 9.77 20 10V11.6667ZM14.1667 19.5833H15V18.75H14.1667V19.5833ZM15.8333 18.3333V20C15.8333 20.23 15.6467 20.4167 15.4167 20.4167H13.75C13.52 20.4167 13.3333 20.23 13.3333 20V18.3333C13.3333 18.1033 13.52 17.9167 13.75 17.9167H15.4167C15.6467 17.9167 15.8333 18.1033 15.8333 18.3333ZM14.1667 15.4167H15V14.5833H14.1667V15.4167ZM15.8333 15.8333C15.8333 16.0633 15.6467 16.25 15.4167 16.25H13.75C13.52 16.25 13.3333 16.0633 13.3333 15.8333V14.1667C13.3333 13.9367 13.52 13.75 13.75 13.75H15.4167C15.6467 13.75 15.8333 13.9367 15.8333 14.1667V15.8333ZM10 15.4167H10.8333V14.5833H10V15.4167ZM11.6667 15.8333C11.6667 16.0633 11.48 16.25 11.25 16.25H9.58333C9.35333 16.25 9.16667 16.0633 9.16667 15.8333V14.1667C9.16667 13.9367 9.35333 13.75 9.58333 13.75H11.25C11.48 13.75 11.6667 13.9367 11.6667 14.1667V15.8333ZM10 11.25H10.8333V10.4167H10V11.25ZM11.6667 11.6667C11.6667 11.8967 11.48 12.0833 11.25 12.0833H9.58333C9.35333 12.0833 9.16667 11.8967 9.16667 11.6667V10C9.16667 9.77 9.35333 9.58333 9.58333 9.58333H11.25C11.48 9.58333 11.6667 9.77 11.6667 10V11.6667ZM5.83333 15.4167H6.66667V14.5833H5.83333V15.4167ZM7.5 15.8333C7.5 16.0633 7.31333 16.25 7.08333 16.25H5.41667C5.18667 16.25 5 16.0633 5 15.8333V14.1667C5 13.9367 5.18667 13.75 5.41667 13.75H7.08333C7.31333 13.75 7.5 13.9367 7.5 14.1667V15.8333ZM5.83333 11.25H6.66667V10.4167H5.83333V11.25ZM7.5 11.6667C7.5 11.8967 7.31333 12.0833 7.08333 12.0833H5.41667C5.18667 12.0833 5 11.8967 5 11.6667V10C5 9.77 5.18667 9.58333 5.41667 9.58333H7.08333C7.31333 9.58333 7.5 9.77 7.5 10V11.6667ZM18.3333 2.91667C18.3333 3.14625 18.5204 3.33333 18.75 3.33333C18.9796 3.33333 19.1667 3.14625 19.1667 2.91667V1.25C19.1667 1.02042 18.9796 0.833333 18.75 0.833333C18.5204 0.833333 18.3333 1.02042 18.3333 1.25V2.91667ZM17.5 2.91667V1.25C17.5 0.560833 18.0608 0 18.75 0C19.4392 0 20 0.560833 20 1.25V2.91667C20 3.60583 19.4392 4.16667 18.75 4.16667C18.0608 4.16667 17.5 3.60583 17.5 2.91667ZM14.1667 2.91667C14.1667 3.14625 14.3537 3.33333 14.5833 3.33333C14.8129 3.33333 15 3.14625 15 2.91667V1.25C15 1.02042 14.8129 0.833333 14.5833 0.833333C14.3537 0.833333 14.1667 1.02042 14.1667 1.25V2.91667ZM13.3333 2.91667V1.25C13.3333 0.560833 13.8942 0 14.5833 0C15.2725 0 15.8333 0.560833 15.8333 1.25V2.91667C15.8333 3.60583 15.2725 4.16667 14.5833 4.16667C13.8942 4.16667 13.3333 3.60583 13.3333 2.91667ZM10 2.91667C10 3.14625 10.1871 3.33333 10.4167 3.33333C10.6462 3.33333 10.8333 3.14625 10.8333 2.91667V1.25C10.8333 1.02042 10.6462 0.833333 10.4167 0.833333C10.1871 0.833333 10 1.02042 10 1.25V2.91667ZM9.16667 2.91667V1.25C9.16667 0.560833 9.7275 0 10.4167 0C11.1058 0 11.6667 0.560833 11.6667 1.25V2.91667C11.6667 3.60583 11.1058 4.16667 10.4167 4.16667C9.7275 4.16667 9.16667 3.60583 9.16667 2.91667ZM5.83333 2.91667C5.83333 3.14625 6.02042 3.33333 6.25 3.33333C6.47958 3.33333 6.66667 3.14625 6.66667 2.91667V1.25C6.66667 1.02042 6.47958 0.833333 6.25 0.833333C6.02042 0.833333 5.83333 1.02042 5.83333 1.25V2.91667ZM5 2.91667V1.25C5 0.560833 5.56083 0 6.25 0C6.93917 0 7.5 0.560833 7.5 1.25V2.91667C7.5 3.60583 6.93917 4.16667 6.25 4.16667C5.56083 4.16667 5 3.60583 5 2.91667ZM20.1221 22.6221C19.9592 22.785 19.9592 23.0483 20.1221 23.2113C20.2033 23.2925 20.31 23.3333 20.4167 23.3333C20.5233 23.3333 20.63 23.2925 20.7113 23.2113L23.2113 20.7113C23.2896 20.6333 23.3333 20.5271 23.3333 20.4167V7.08333C23.3333 6.85333 23.1467 6.66667 22.9167 6.66667H2.08333C1.85333 6.66667 1.66667 6.85333 1.66667 7.08333V21.6667C1.66667 22.5858 2.41417 23.3333 3.33333 23.3333H18.75C18.98 23.3333 19.1667 23.1467 19.1667 22.9167V20.4167C19.1667 20.2279 19.3525 20 19.5833 20H21.25C21.48 20 21.6667 19.8133 21.6667 19.5833C21.6667 19.3533 21.48 19.1667 21.25 19.1667H19.5833C18.9175 19.1667 18.3333 19.7508 18.3333 20.4167V22.5H3.33333C2.87375 22.5 2.5 22.1262 2.5 21.6667V7.5H22.5V20.2442L20.1221 22.6221ZM22.9167 0.833333H21.25C21.02 0.833333 20.8333 1.02 20.8333 1.25C20.8333 1.48 21.02 1.66667 21.25 1.66667H22.9167C23.5242 1.66667 24.1667 2.30917 24.1667 2.91667V22.9167C24.1667 23.5242 23.5242 24.1667 22.9167 24.1667H2.08333C1.47583 24.1667 0.833333 23.5242 0.833333 22.9167V5.83333H22.9167C23.1467 5.83333 23.3333 5.64667 23.3333 5.41667C23.3333 5.18667 23.1467 5 22.9167 5H0.416667C0.186667 5 0 5.18667 0 5.41667V22.9167C0 23.9875 1.0125 25 2.08333 25H22.9167C23.9875 25 25 23.9875 25 22.9167V2.91667C25 1.84583 23.9875 0.833333 22.9167 0.833333ZM0 3.75V2.91667C0 1.84583 1.0125 0.833333 2.08333 0.833333H3.75C3.98 0.833333 4.16667 1.02 4.16667 1.25C4.16667 1.48 3.98 1.66667 3.75 1.66667H2.08333C1.47583 1.66667 0.833333 2.30917 0.833333 2.91667V3.75C0.833333 3.98 0.646667 4.16667 0.416667 4.16667C0.186667 4.16667 0 3.98 0 3.75Z"
+                        fill="#F59305"
+                      />
+                    </svg>
+                    <span>01 June, 2023</span>
+                  </div>
+                  <div class="recently_blog_wrapper_content_heading">
+                    <h1>How Manage Business Online Reputation</h1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="recently_blog_tag_heading">
+                <h1>Tag</h1>
+              </div>
+              <div class="recently_blog_tag">
+                <a href="#">Nescafe</a>
+                <a href="#">Fortune</a>
+                <a href="#">Tata</a>
+                <a href="#">Care Product</a>
+                <a href="#">Fruits & Vegetables</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Content End -->
+
+    <!-- Footer Start  -->
+    <section id="footer">
+      <div class="container">
+        <div class="footer_main_logo">
+          <img
+            src="./assets/image/home-all-image/footer_image/footer_image_02.png"
+            alt=""
+          />
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer_content_menu">
+              <div class="footer_content_menu_heading">
+                <h1>Quick Link</h1>
+              </div>
+              <div class="footer_content_wrapper_box">
+                <div class="footer_content_wrappers">
+                  <div class="footer_content_wrapper_menu">
+                    <div class="footer_content_wrapper_img">
+                      <a href="#"
+                        ><img src="./assets/icon/right-arraw_01.svg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Shop</a></span>
+                  </div>
+                  <div class="footer_content_wrapper_menu">
+                    <div class="footer_content_wrapper_img">
+                      <a href="#"
+                        ><img src="./assets/icon/right-arraw_01.svg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">About Us</a></span>
+                  </div>
+                  <div class="footer_content_wrapper_menu">
+                    <div class="footer_content_wrapper_img">
+                      <a href="#"
+                        ><img src="./assets/icon/right-arraw_01.svg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Blog</a></span>
+                  </div>
+                  <div class="footer_content_wrapper_menu">
+                    <div class="footer_content_wrapper_img">
+                      <a href="#"
+                        ><img src="./assets/icon/right-arraw_01.svg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Terms and Condition</a></span>
+                  </div>
+                  <div class="footer_content_wrapper_menu">
+                    <div class="footer_content_wrapper_img">
+                      <a href="#"
+                        ><img src="./assets/icon/right-arraw_01.svg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Privacy Policy</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer_content_menu">
+              <div class="footer_content_menu_heading">
+                <h1>Popular Categories</h1>
+              </div>
+              <div class="footer_content_wrapper_box">
+                <div class="footer_content_wrappers">
+                  <div class="footer_content_wrapper_menu">
+                    <div class="footer_content_wrapper_img">
+                      <a href="#"
+                        ><img src="./assets/icon/right-arraw_01.svg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Fruits & Vegetables</a></span>
+                  </div>
+                  <div class="footer_content_wrapper_menu mt-2">
+                    <div class="footer_content_wrapper_img">
+                      <a href="#"
+                        ><img src="./assets/icon/right-arraw_01.svg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Organic Food</a></span>
+                  </div>
+                  <div class="footer_content_wrapper_menu">
+                    <div class="footer_content_wrapper_img">
+                      <a href="#"
+                        ><img src="./assets/icon/right-arraw_01.svg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Milk & Juices</a></span>
+                  </div>
+                  <div class="footer_content_wrapper_menu">
+                    <div class="footer_content_wrapper_img">
+                      <a href="#"
+                        ><img src="./assets/icon/right-arraw_01.svg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Beverage & Drinks</a></span>
+                  </div>
+                  <div class="footer_content_wrapper_menu">
+                    <div class="footer_content_wrapper_img">
+                      <a href="#"
+                        ><img src="./assets/icon/right-arraw_01.svg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Chocolate Box</a></span>
+                  </div>
+                  <div class="footer_content_wrapper_menu">
+                    <div class="footer_content_wrapper_img">
+                      <a href="#"
+                        ><img src="./assets/icon/right-arraw_01.svg" alt=""
+                      /></a>
+                    </div>
+                    <span><a href="#">Bakery</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer_content_menu">
+              <div class="footer_content_menu_heading">
+                <h1>Contact Us</h1>
+              </div>
+              <div class="footer_content_wrapper_box">
+                <div class="footer_content_wrapper">
+                  <div class="footer_content_wrapper_address">
+                    <span
+                      style="color: #f59305; font-size: 18px; font-weight: 700"
+                      >Address:</span
+                    >
+                    <span style="color: rgba(163, 163, 163, 1)"
+                      >PO Box W75 Street West New Queens, TX 16819, USA</span
+                    >
+                  </div>
+
+                  <div class="footer_content_wrapper_address mt-3">
+                    <span
+                      style="color: #f59305; font-size: 18px; font-weight: 700"
+                      >E-mail:</span
+                    >
+                    <span style="color: rgba(163, 163, 163, 1)"
+                      ><a href="#">shalbymart@gmail.com</a></span
+                    >
+                  </div>
+
+                  <div class="footer_content_wrapper_address mt-3">
+                    <span
+                      style="color: #f59305; font-size: 18px; font-weight: 700"
+                      >Phone:</span
+                    >
+                    <span style="color: rgba(163, 163, 163, 1)"
+                      ><a href="#">(+88) 8841-5144</a></span
+                    >
+                  </div>
+
+                  <div class="footer_menu_items mt-3">
+                    <div class="footer_content_menu_heading">
+                      <h1>Contact Us</h1>
+                    </div>
+                    <div class="footer_menu_item_list">
+                      <a href="#"
+                        ><i
+                          class="fa-brands fa-facebook-f"
+                          style="color: #f59305"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="fa-brands fa-twitter"
+                          style="color: #f59305"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="fa-brands fa-linkedin-in"
+                          style="color: #f59305"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copy_right">
+          <div class="copy_right_text">
+            <a href="#">© 2023 Shalby Mart - All right reserved.</a>
+          </div>
+          <div class="copy_right_card">
+            <a href="#"
+              ><img
+                src="./assets/image/home-all-image/footer_image/footer_image_03.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer End  -->
+
+    <!-- Go-Back Start -->
+    <div id="progress">
+      <span class="progress-value"
+        ><i class="fa-solid fa-arrow-up" style="color: #f59305"></i
+      ></span>
+    </div>
+    <!-- Go-Back End -->
+
+    <!-- Js Link Start -->
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/tab.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <!-- Js Link End -->
+
+    <!-- Swiper JS Start -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/special-offer.js"></script>
+    <script src="./assets/js/deal.js"></script>
+    <script src="./assets/js/latest_news.js"></script>
+    <!-- Swiper JS Start -->
+
+    <!-- Bootstrap JS Link Start -->
+    <script src="./assets/css/bootstrap/bootstrap.min.js"></script>
+    <!-- Bootstrap JS Link End -->
+  </body>
+</html>
