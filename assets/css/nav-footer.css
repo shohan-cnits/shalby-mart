@@ -415,6 +415,11 @@ ul {
   font-family: var(--secondary-font);
 }
 
+.menu-main li a.active,
+.menu-main li a:hover {
+  color: var(--primary-color) !important;
+}
+
 .header .menu > ul > li .sub-menu {
   position: absolute;
   z-index: 500;
