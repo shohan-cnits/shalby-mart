@@ -315,4 +315,52 @@ p {
     margin-left: 0px;
   }
 }
+.popular_product_wrapper_pagenation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.pagenation_all_items {
+  display: flex;
+  gap: 20px;
+}
+.pagenation_all_items a {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 7px;
+  transition: 0.3s;
+  font-family: var(--primary-font);
+}
+
+.pagenation_all_items a:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.pagenation_all_items a:hover .fa-angle-left {
+  color: #ffffff !important;
+}
+
+.pagenation_all_items a:hover .fa-angle-right {
+  color: #ffffff !important;
+}
+
+.pagenation_all_items a i {
+  font-size: 25px;
+}
+
+.pagenation_all_items a:nth-child(1) {
+  border-radius: 50%;
+}
+.pagenation_all_items a:last-child {
+  border-radius: 50%;
+}
 /* Blog Content End */

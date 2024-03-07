@@ -188,6 +188,19 @@ p {
   background: var(--primary-color);
   color: var(--white);
 }
+
+.details_shalby_wrapper_content_heading h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.details_shalby_wrapper_content_heading p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  align-items: center;
+}
 /* Details Shalby Mart End */
 
 /* Team Member Start */
