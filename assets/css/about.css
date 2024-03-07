@@ -201,6 +201,67 @@ p {
   font-weight: 500;
   align-items: center;
 }
+
+.details_shalby_number_counter {
+  margin-top: 0px;
+}
+
+.counters:nth-child(1) {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.counters:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter h1 {
+  text-align: center;
+  font-size: 50px;
+  color: var(--primary-color);
+}
+
+.counter h3 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .counter h1 {
+    font-size: 30px;
+  }
+  .counters {
+    margin-top: 0;
+  }
+
+  .details_shalby_about_btn a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .details_shalby_wrapper_content {
+    margin-top: 50px;
+  }
+  .counter h1 {
+    font-size: 50px;
+  }
+  .details_shalby_about_btn a {
+    font-size: 16px;
+  }
+  .details_shalby_about_btn {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .details_shalby_wrapper_content {
+    margin-top: 50px;
+  }
+  .counter h1 {
+    font-size: 30px;
+  }
+}
 /* Details Shalby Mart End */
 
 /* Team Member Start */
@@ -239,7 +300,7 @@ p {
 }
 
 .card__data {
-  width: 300px;
+  width: 270px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1.5rem 2rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
