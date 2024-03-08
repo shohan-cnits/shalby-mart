@@ -294,12 +294,28 @@ ul {
   display: flex;
   width: 30px;
   height: 30px;
+  position: relative;
   border-radius: 50%;
   line-height: 20px;
   align-items: center;
   justify-content: center;
   border: var(--primary-border);
   background: var(--secondary-color);
+}
+
+.header_menu_items span {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--white);
+  font-size: 8px;
+  border-radius: 50%;
+  align-items: center;
+  top: 0px;
+  right: -3px;
+  border: 1px solid var(--secondary-color);
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 991px) {

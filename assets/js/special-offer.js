@@ -1,6 +1,6 @@
 var swiper = new Swiper(".card_slider", {
-  slidesPerView: 4,
-  spaceBetween: 10,
+  slidesPerView: 5,
+  spaceBetween: 1,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

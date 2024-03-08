@@ -96,6 +96,7 @@ p {
   border-radius: 50px;
   color: var(--white);
   font-size: 18px;
+  font-weight: 600;
   font-family: var(--secondary-font);
 }
 
@@ -159,11 +160,6 @@ p {
   }
 }
 
-/* @media screen and (max-width: 991px) {
-  #hero {
-    height: 80vh;
-  }
-} */
 /* Hero  End */
 
 /* Feature Start */
@@ -172,11 +168,12 @@ p {
 }
 
 .feature_product_servies_card {
-  border: var(--primary-border);
+  border: 2px solid var(--secondary-color);
   width: 100%;
   padding: 10px;
   background: var(--white);
   opacity: 0.9;
+  border-radius: 5px;
 }
 
 .feature_card_img svg {
@@ -226,6 +223,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide img {
@@ -291,6 +290,16 @@ p {
   transition: 0.5s ease;
 }
 
+.special-offer-card_btn_text {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+
+.special-offer-card_btn_text p {
+  font-size: 14px;
+}
+
 .special-offer-card {
   background: var(--white);
   width: 100%;
@@ -316,6 +325,7 @@ p {
   background: var(--secondary-color);
   font-size: 14px;
   color: var(--white);
+  border-radius: 0 3px 3px 0;
 }
 
 .special_offer_img img {
@@ -453,6 +463,7 @@ p {
   aspect-ratio: 2/1;
   position: relative;
   background: #ffffff;
+  border-radius: 5px;
 }
 
 .popular_product_card_img {
@@ -606,6 +617,7 @@ p {
   aspect-ratio: 2/1;
   position: relative;
   background: #ffffff;
+  border-radius: 5px;
 }
 
 .best_seller_card_img {
@@ -767,6 +779,7 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 5px;
 }
 
 .product_discount_content_items_over {
@@ -825,6 +838,7 @@ p {
   background-position: center;
   background-size: cover;
   margin-top: 70px;
+  border-radius: 5px;
 }
 
 .product_discount_item_offer_btn {
@@ -893,6 +907,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 5px;
 }
 
 .product_discount_item_hot_heading {
@@ -1016,6 +1031,7 @@ p {
   aspect-ratio: 2/1;
   position: relative;
   background: #ffffff;
+  border-radius: 5px;
 }
 
 .bekery_card_img {
