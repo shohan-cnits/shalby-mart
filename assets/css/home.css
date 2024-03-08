@@ -46,7 +46,8 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
+  padding: 0 0 150px 0;
 }
 
 .hero_wrapper {
@@ -158,11 +159,11 @@ p {
   }
 }
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
   #hero {
     height: 80vh;
   }
-}
+} */
 /* Hero  End */
 
 /* Feature Start */
