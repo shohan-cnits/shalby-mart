@@ -518,6 +518,11 @@ ul {
   min-width: 280px;
   max-width: 350px;
 }
+
+.menu-item-has-children:hover .fas {
+  transform: rotate(180deg);
+}
+
 .header
   .menu
   > ul
