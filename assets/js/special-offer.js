@@ -1,6 +1,6 @@
 var swiper = new Swiper(".card_slider", {
-  slidesPerView: 5,
-  spaceBetween: 1,
+  slidesPerView: 4,
+  spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -21,15 +21,20 @@ var swiper = new Swiper(".card_slider", {
     },
     640: {
       slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    878: {
+      slidesPerView: 3,
       spaceBetween: 20,
     },
-    768: {
+    991: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
+
     1024: {
       slidesPerView: 4,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
   },
 });
