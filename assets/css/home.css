@@ -377,7 +377,7 @@ p {
   width: 100%;
   height: 100%;
   opacity: 0;
-  padding-top: 27vh;
+  padding-top: 17vh;
   justify-content: center;
   align-items: center;
   transition: 0.5s ease;
@@ -386,12 +386,12 @@ p {
 .special_offer_overlay a {
   display: block;
   width: 160px;
-  height: 40px;
+  height: 30px;
   background: var(--primary-color);
   color: var(--white);
   margin: auto;
-  padding-top: 5px;
-  font-size: 16px;
+  padding-top: 3px;
+  font-size: 14px;
   border: var(--secondary-border);
   border-radius: 5px;
   font-family: var(--primary-font);
@@ -847,7 +847,7 @@ p {
 
 .product_discount_content_items_over p {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--secondary-color);
 }
 
@@ -870,7 +870,7 @@ p {
 .product_discount_overly_btn a {
   display: inline-block;
   padding: 7px 20px;
-  border: var(--secondary-border);
+  border: 2px solid var(--primary-color);
   background: rgba(255, 255, 255, 0.3);
   color: var(--primary-color);
   font-family: var(--primary-font);
@@ -913,7 +913,7 @@ p {
   border-radius: 5px;
   font-family: var(--secondary-font);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
   transition: 0.3s ease;
 }
@@ -940,7 +940,7 @@ p {
 .product_discount_text_btn a {
   display: inline-block;
   padding: 6px 20px;
-  border: var(--secondary-border);
+  border: 2px solid var(--primary-color);
   background: rgba(255, 255, 255, 0.7);
   color: var(--primary-color);
   font-weight: 700;
@@ -974,6 +974,7 @@ p {
 .product_discount_item_hot_heading p {
   font-size: 16px;
   color: var(--primary-color);
+  font-weight: 600;
 }
 
 .product_discount_item_hot_heading p:last-child {
@@ -995,7 +996,7 @@ p {
   padding: 6px 20px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
-  border: var(--secondary-border);
+  border: 2px solid var(--primary-color);
   color: var(--primary-color);
   font-weight: 700;
   transition: 0.3s ease;
@@ -1070,8 +1071,9 @@ p {
 
 .bekery_btn a {
   display: inline-block;
-  padding: 5px 20px;
+  padding: 5px 30px;
   font-size: 18px;
+  border-radius: 5px;
   border: var(--secondary-border);
   font-family: var(--primary-font);
   color: var(--primary-color);
@@ -1157,9 +1159,9 @@ p {
 .bekery_card_overlay a {
   display: block;
   width: 160px;
-  height: 40px;
+  height: 30px;
   background: var(--primary-color);
-  padding-top: 6px;
+  padding-top: 3px;
   color: var(--white);
   font-family: var(--primary-font);
   font-size: 16px;
@@ -1217,6 +1219,7 @@ p {
 .deal_heading h1 {
   display: inline-block;
   border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 4px;
   font-size: 40px;
 }
 
@@ -1243,7 +1246,8 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   height: 350px;
-  border: var(--secondary-border);
+  border-left: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
 }
 
 .card_item_fast_content {
@@ -1416,12 +1420,15 @@ p {
   font-size: 40px;
 }
 
-.latest_news_content {
-  padding: 20px 0;
-}
-
 .latest_news_slider {
   padding: 60px 0;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  align-items: stretch;
+  height: auto;
+  display: flex;
 }
 
 .latest_news_card_heading p {
@@ -1491,7 +1498,7 @@ p {
   background-color: rgba(255, 255, 255, 0.3);
   font-size: 16px;
   font-family: var(--primary-font);
-  border: var(--secondary-border);
+  border: 2px solid var(--secondary-color);
   color: var(--primary-color);
   border-radius: 5px;
   transition: 0.3s ease;
