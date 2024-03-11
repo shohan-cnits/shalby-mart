@@ -12,7 +12,7 @@ var swiper = new Swiper('.selling-slider', {
 
 function getDirection() {
   var windowHeight = window.innerHeight;
-  var direction = window.innerHeight <= 2520 ? 'vertical' : 'horizonta';
+  var direction = window.innerHeight <= 3520 ? 'vertical' : 'horizonta';
 
   return direction;
 }
