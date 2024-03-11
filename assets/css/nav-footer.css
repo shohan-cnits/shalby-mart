@@ -232,7 +232,7 @@ ul {
 }
 
 .from_search form button {
-  border: 1px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   border-top: none;
   border-bottom: none;
   outline: none;
