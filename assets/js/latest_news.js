@@ -10,10 +10,7 @@ var swiper = new Swiper(".latest_news_slider", {
       disableOnInteraction: false,
     },
     loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  
     breakpoints: {
       225: {
         slidesPerView: 1,
