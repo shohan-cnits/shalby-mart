@@ -242,7 +242,7 @@ p {
 .recently_blog_heading h1 {
   display: inline-block;
   padding-bottom: 4px;
-  border-bottom: var(--primary-border);
+  border-bottom: 2px solid var(--secondary-color);
   font-size: 40px;
 }
 
@@ -314,6 +314,18 @@ p {
   }
   .recently_blog_tag a:nth-child(4) {
     margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .recently_blog_heading h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .blog_content_input {
+    margin-bottom: 30px;
   }
 }
 .popular_product_wrapper_pagenation {

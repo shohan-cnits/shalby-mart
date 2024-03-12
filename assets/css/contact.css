@@ -128,7 +128,7 @@ p {
   font-size: 38px;
   display: inline-block;
   padding: 0 0 4px 0;
-  border-bottom: var(--primary-border);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .address_box_heading_text {
@@ -149,7 +149,7 @@ p {
   width: 100%;
   padding: 30px;
   height: 220px;
-  border: var(--primary-border);
+  border: 2px solid var(--secondary-color);
   margin-top: 20px;
   border-radius: 5px;
 }
@@ -235,7 +235,7 @@ p {
   display: inline-block;
   padding-bottom: 4px;
   font-size: 40px;
-  border-bottom: var(--primary-border);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .address_servies_wrapper {
@@ -255,6 +255,12 @@ p {
   margin-top: 7px;
   align-items: center;
 }
+
+@media screen and (max-width: 575px) {
+  .address_servies_heading h1 {
+    font-size: 25px;
+  }
+}
 /* Address Box End */
 
 /* Message Box Start */
@@ -272,8 +278,9 @@ p {
   width: 100%;
   margin-top: 30px;
   padding: 7px;
-  border: var(--primary-border);
+  border: 2px solid var(--secondary-color);
   outline: none;
+  border-radius: 5px;
 }
 
 .message_box_content form textarea {
@@ -282,8 +289,9 @@ p {
   margin-top: 30px;
   padding: 7px;
   aspect-ratio: 4/1;
-  border: var(--primary-border);
+  border: 2px solid var(--secondary-color);
   outline: none;
+  border-radius: 5px;
 }
 
 .message_box_content_cheakbox {
@@ -295,7 +303,7 @@ p {
 .message_box_content_cheakbox input {
   width: 30px !important;
   padding: 10px !important;
-  border: var(--primary-border) !important;
+  border: 2px solid var(--secondary-color) !important;
 }
 
 .message_box_content_cheakbox label {
@@ -313,7 +321,7 @@ p {
 .message_box_content_cheakbox_btn a {
   display: inline-block;
   padding: 7px 30px;
-  border: var(--secondary-border);
+  border: 2px solid var(--primary-color);
   color: var(--primary-color);
   font-family: var(--primary-font);
   border-radius: 5px;
@@ -330,6 +338,13 @@ p {
     display: flex;
     align-items: start;
     justify-content: start;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .message_box_heading h1 {
+    text-align: center;
+    font-size: 25px;
   }
 }
 /* Message Box End */
