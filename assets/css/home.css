@@ -117,9 +117,10 @@ p {
   display: inline-block;
   padding: 10px 20px;
   border: 2px solid #f59305;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--primary-color);
   font-weight: 600;
   color: var(--white);
+  font-family: var(--primary-font);
   transition: 0.3s ease;
   border-radius: 5px;
 }
@@ -127,6 +128,10 @@ p {
 .hero_content_text a:hover {
   background: var(--white);
   color: var(--primary-color);
+}
+
+.hero_content_text a:hover.hero_content_text a svg path {
+  fill: var(--primary-color);
 }
 
 @media screen and (max-width: 1201px) {
@@ -189,6 +194,11 @@ p {
   text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+  #feature {
+    display: none;
+  }
+}
 /* Feature End */
 
 /* Special Offers Stat */
@@ -877,16 +887,16 @@ p {
   display: inline-block;
   padding: 7px 20px;
   border: 2px solid var(--primary-color);
-  background: rgba(255, 255, 255, 0.3);
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--white);
   font-family: var(--primary-font);
   transition: 0.3s ease;
   border-radius: 5px;
 }
 
 .product_discount_overly_btn a:hover {
-  background: var(--primary-color);
-  color: var(--white);
+  background: var(--white);
+  color: var(--primary-color);
 }
 
 .product_discount_content_item_offer {
@@ -947,16 +957,16 @@ p {
   display: inline-block;
   padding: 6px 20px;
   border: 2px solid var(--primary-color);
-  background: rgba(255, 255, 255, 0.7);
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--white);
   font-weight: 700;
   transition: 0.3s ease;
   border-radius: 5px;
 }
 
 .product_discount_text_btn a:hover {
-  background: var(--primary-color);
-  color: var(--white);
+  background: rgb(255, 255, 255);
+  color: var(--primary-color);
 }
 
 .product_discount_content_item_hot {
@@ -1000,17 +1010,17 @@ p {
 .product_discount_item_hot_btn a {
   display: inline-block;
   padding: 6px 20px;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--primary-color);
   border-radius: 5px;
   border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  color: var(--white);
   font-weight: 700;
   transition: 0.3s ease;
 }
 
 .product_discount_item_hot_btn a:hover {
-  background: var(--primary-color);
-  color: var(--white);
+  background: var(--white);
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 1000px) {
@@ -1320,18 +1330,18 @@ p {
   display: inline-block;
   padding: 5px 25px;
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--primary-color);
   font-size: 16px;
   font-family: var(--primary-font);
   border: var(--secondary-border);
-  color: var(--primary-color);
+  color: var(--white);
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
 .card_item_fast_content_btn a:hover {
-  background: var(--primary-color);
-  color: var(--white);
+  background: var(--white);
+  color: var(--primary-color);
 }
 .deals_slider_card_item_second {
   background: url(../image/home-all-image/deals-image/deals_image_02.png);
@@ -1367,18 +1377,18 @@ p {
   display: inline-block;
   padding: 5px 15px;
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--primary-color);
   font-size: 16px;
   font-family: var(--primary-font);
   border: var(--secondary-border);
-  color: var(--primary-color);
+  color: var(--white);
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
 .card_item_second_content_btn a:hover {
-  background: var(--primary-color);
-  color: var(--white);
+  background: var(--white);
+  color: var(--primary-color);
 }
 
 .deals_slider_card_menu_third {
@@ -1421,18 +1431,18 @@ p {
   margin-top: 30px;
   float: right;
   padding: 5px 15px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--primary-color);
   font-size: 16px;
   font-family: var(--primary-font);
   border: var(--secondary-border);
-  color: var(--primary-color);
+  color: var(--white);
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
 .card_menu_third_content_btn a:hover {
-  background: var(--primary-color);
-  color: var(--white);
+  background: var(--white);
+  color: var(--primary-color);
 }
 
 /* Deals End */
@@ -1529,18 +1539,18 @@ p {
   display: inline-block;
   padding: 5px 15px;
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--primary-color);
   font-size: 16px;
   font-family: var(--primary-font);
   border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  color: var(--white);
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
 .latest_news_menu_btn a:hover {
-  background: var(--primary-color);
-  color: var(--white);
+  background: var(--white);
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 767px) {
