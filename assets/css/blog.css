@@ -71,19 +71,19 @@ p {
 
 @media screen and (max-width: 778px) {
   .blog_hero_heading h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .blog_hero_heading p {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .blog_hero_heading h1 {
-    font-size: 22px;
+    font-size: 40px;
   }
   .blog_hero_heading p {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 /* Hero  End */
@@ -138,6 +138,7 @@ p {
 .blog_content_main_items_list span {
   color: #a3a3a3;
   font-size: 16px;
+  font-family: var(--secondary-font);
 }
 
 .blog_content_image img {
@@ -155,7 +156,7 @@ p {
 .blog_content_main_items_btn {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
 }
 
 .blog_content_main_items_btn a {
@@ -185,10 +186,14 @@ p {
   }
 
   .blog_content_main_items {
-    gap: 12px;
+    gap: 8px;
   }
 
   .blog_content_main_items_list {
+    gap: 8px;
+  }
+
+  .blog_content_main_items_list span {
     align-items: center;
   }
 
@@ -197,11 +202,11 @@ p {
   }
 
   .blog_content_main_items_list svg {
-    width: 20px;
+    width: 16px;
   }
 
   .blog_content_main_items_text p {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
@@ -220,6 +225,7 @@ p {
   border: none;
   outline: none;
   padding: 0 10px;
+  font-family: var(--secondary-font);
 }
 
 .blog_content_input button svg {
@@ -292,8 +298,8 @@ p {
   background: #f9f4c9;
   color: var(--black);
   font-size: 20px;
-  font-weight: 500;
   border-radius: 5px;
+  font-family: var(--secondary-font);
   border: var(--primary-border);
 }
 
@@ -368,6 +374,11 @@ p {
 
 .pagenation_all_items a i {
   font-size: 25px;
+}
+
+.pagenation_all_items .active {
+  background: var(--primary-color);
+  color: var(--white);
 }
 
 .pagenation_all_items a:nth-child(1) {

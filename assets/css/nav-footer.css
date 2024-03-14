@@ -1059,7 +1059,7 @@ ul {
 }
 
 .footer_content_wrapper_menu span a {
-  color: rgb(138, 136, 136, 1);
+  color: rgb(73, 71, 71) !important;
   font-family: var(--secondary-font);
   font-weight: 500;
 }
@@ -1073,10 +1073,11 @@ ul {
 .footer_content_wrapper_address {
   display: flex;
   gap: 15px;
+  color: rgb(73, 71, 71) !important;
 }
 
 .footer_content_wrapper_address span a {
-  color: rgb(138, 136, 136, 1) !important;
+  color: rgb(73, 71, 71) !important;
   font-weight: 500;
   font-family: var(--secondary-font);
 }
@@ -1127,14 +1128,11 @@ ul {
 
 .copy_right_card {
   height: 30px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .copy_right_text a {
   font-size: 16px;
-  color: rgba(163, 163, 163, 1);
+  color: rgb(73, 71, 71) !important;
   font-family: var(--secondary-font);
 }
 

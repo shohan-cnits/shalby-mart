@@ -71,19 +71,19 @@ p {
 
 @media screen and (max-width: 778px) {
   .blog_hero_heading h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .blog_hero_heading p {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .blog_hero_heading h1 {
-    font-size: 22px;
+    font-size: 30px;
   }
   .blog_hero_heading p {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 /* Hero  End */
@@ -133,11 +133,13 @@ p {
 .blog_content_main_items_list {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .blog_content_main_items_list span {
   color: #a3a3a3;
   font-size: 16px;
+  font-family: var(--secondary-font);
 }
 
 .blog_content_image img {
@@ -187,10 +189,14 @@ p {
   }
 
   .blog_content_main_items {
-    gap: 12px;
+    gap: 8px;
   }
 
   .blog_content_main_items_list {
+    gap: 8px;
+  }
+
+  .blog_content_main_items_list span {
     align-items: center;
   }
 
@@ -199,11 +205,11 @@ p {
   }
 
   .blog_content_main_items_list svg {
-    width: 20px;
+    width: 16px;
   }
 
   .blog_content_main_items_text p {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
@@ -222,6 +228,7 @@ p {
   border: none;
   outline: none;
   padding: 0 10px;
+  font-family: var(--secondary-font);
 }
 
 .blog_content_input button svg {
@@ -244,7 +251,7 @@ p {
 .recently_blog_heading h1 {
   display: inline-block;
   padding-bottom: 4px;
-  border-bottom: var(--primary-border);
+  border-bottom: 2px solid var(--secondary-color);
   font-size: 40px;
 }
 
@@ -296,6 +303,8 @@ p {
   font-size: 20px;
   font-weight: 500;
   border-radius: 5px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
   border: var(--primary-border);
 }
 
@@ -329,13 +338,14 @@ p {
   padding: 30px;
   border: var(--primary-border);
   aspect-ratio: 2/1;
+  border-radius: 5px;
 }
 
 .single_blog_page_form_heading h1 {
   font-size: 35px;
   display: inline-block;
   padding-bottom: 4px;
-  border-bottom: var(--primary-border);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .single_blog_page_form_heading {
@@ -347,8 +357,9 @@ p {
   display: block;
   margin-bottom: 20px;
   padding: 5px 10px;
-  border: var(--primary-border);
+  border: 2px solid var(--secondary-color);
   outline: none;
+  font-family: var(--secondary-font);
   border-radius: 3px;
 }
 
@@ -357,7 +368,8 @@ p {
   aspect-ratio: 4/1;
   padding: 5px 10px;
   border-radius: 5px;
-  border: var(--primary-border);
+  font-family: var(--secondary-font);
+  border: 2px solid var(--secondary-color);
   outline: none;
 }
 
@@ -370,7 +382,7 @@ p {
 .message_box_content_cheakbox_btn a {
   display: inline-block;
   padding: 7px 30px;
-  border: var(--secondary-border);
+  border: 2px solid var(--primary-color);
   color: var(--primary-color);
   font-family: var(--primary-font);
   border-radius: 5px;
