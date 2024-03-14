@@ -196,7 +196,6 @@ ul {
 
 .total_products_content_input {
   position: relative;
-  /* margin-right: 10px; */
 }
 
 .total_products_content_input .topbar_btn {
@@ -204,15 +203,13 @@ ul {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  color: rgb(53, 51, 51);
-  font-weight: 600;
-  height: 35px;
-  font-size: 16px;
+  color: var(--white);
   width: 100%;
-  font-family: var(--secondary-font);
+  height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 20px;
   border-radius: 5px;
-  text-align: center;
-  padding: 5px 15px;
   cursor: pointer;
 }
 
@@ -224,13 +221,14 @@ ul {
   transform: rotate(180deg);
 }
 
+.topbar_btns.active .icon_arraw {
+  transform: rotate(180deg);
+}
+
 .total_products_content_input .topbar_list {
   position: absolute;
-  z-index: 999;
-  transform: translateY(0px);
-  margin-top: 10px;
-  padding-right: 10px;
   width: 100%;
+  z-index: 99;
 }
 
 .topbar_list .topbar_option:hover {
@@ -249,25 +247,24 @@ ul {
 
 .topbar_option .topbar_option-text {
   font-size: 15px;
+  font-weight: 500;
+  text-align: center;
   font-family: var(--secondary-font);
-  color: rgb(53, 51, 51);
-  font-weight: 600;
+  color: #000000;
 }
 
 .topbar_list .topbar_option {
+  display: flex;
   width: 100%;
-  display: inline-block;
   align-items: center;
-  height: 35px;
-  padding: 3px 16px;
-  text-align: center;
+  height: 25px;
+  padding: 0 16px;
   cursor: pointer;
   background: #fff;
+  border: var(--primary-border);
   opacity: 0;
-  border: 1px solid rgba(54, 189, 100, 60%);
-  /* border: 1px solid rgba(0, 0, 0, 0.3); */
   transform-origin: top;
-  transform: scale(0) translateY(-65px);
+  transform: scale(0) translateY(-60px);
   margin-bottom: -55px;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
     margin-bottom 0.5s ease-in-out;
@@ -283,12 +280,122 @@ ul {
   margin-bottom: 0;
 }
 
+.topbar_btns.active ~ .topbar_list .topbar_option {
+  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out,
+    margin-bottom 0.2s ease-in-out;
+  transition-delay: calc(0.1s * var(--i));
+  transform: scale(1) translateY(0);
+  opacity: 1;
+  margin-bottom: 0;
+}
+
 .topbar_section_items_content {
   position: relative;
 }
 
-.topbar_section_items form {
+.total_products_content_inputs {
+  position: relative;
+}
+
+.topbar_section_items_contents {
+  position: relative;
+}
+
+.total_products_content_inputs .topbar_btns {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: var(--white);
+  width: 100%;
+  height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.topbar_btns .icon_arraw {
+  transition: 0.5s;
+}
+
+.topbar_btns.active .icon_arraw {
+  transform: rotate(180deg);
+}
+
+.topbar_btns.active .icon_arraw {
+  transform: rotate(180deg);
+}
+
+.total_products_content_inputs .topbar_lists {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.topbar_lists .topbar_options:hover {
+  background: #f2f2f2;
+}
+
+.topbar_lists .topbar_options:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.topbar_lists .topbar_options:nth-child(5) {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.topbar_options .topbar_option-texts {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  font-family: var(--secondary-font);
+  color: #000000;
+}
+
+.topbar_lists .topbar_options {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 25px;
+  padding: 0 16px;
+  cursor: pointer;
+  background: #fff;
+  border: var(--primary-border);
+  opacity: 0;
+  transform-origin: top;
+  transform: scale(0) translateY(-60px);
+  margin-bottom: -55px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
+    margin-bottom 0.5s ease-in-out;
+  transition-delay: calc(0.1s * var(--i));
+}
+
+.topbar_btn.active ~ .topbar_lists .topbar_options {
+  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out,
+    margin-bottom 0.2s ease-in-out;
+  transition-delay: calc(0.1s * var(--i));
+  transform: scale(1) translateY(0);
+  opacity: 1;
+  margin-bottom: 0;
+}
+
+.topbar_btns.active ~ .topbar_lists .topbar_options {
+  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out,
+    margin-bottom 0.2s ease-in-out;
+  transition-delay: calc(0.1s * var(--i));
+  transform: scale(1) translateY(0);
+  opacity: 1;
+  margin-bottom: 0;
+}
+
+.topbar_section_items {
+  display: flex;
+  gap: 10px;
+  /* justify-content: space-between; */
 }
 
 @media screen and (max-width: 992px) {

@@ -33,7 +33,7 @@
     <section id="topbar">
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
+          <div class="col-md-8">
             <div class="topbar_timeline">
               <div class="topbar_time">
                 <h3>Open Hours:</h3>
@@ -42,25 +42,86 @@
               </div>
             </div>
           </div>
-          <div class="col-md-1"></div>
           <div class="col-md-4">
             <div class="topbar_section_items">
               <p class="">Need Help?</p>
               <form>
-                <select id="cars" name="cars">
-                  <option value="volvo">USD</option>
-                  <option value="saab">USD</option>
-                  <option value="fiat">USD</option>
-                  <option value="audi">USD</option>
-                </select>
+                <div class="topbar_section_items_contents">
+                  <div class="total_products_content_inputs">
+                    <div class="topbar_btns" id="topbar_btns">
+                      <span id="topbar_texts" style="padding-right: 5px"
+                        >USD</span
+                      >
+                      <span
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 24 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.989 0.598712C21.3255 0.251978 21.8617 0.195375 22.2632 0.46422L23.0043 0.96056C23.5227 1.30777 23.6001 2.03975 23.1657 2.48765L12 14L0.834341 2.48765C0.399927 2.03975 0.47728 1.30777 0.99572 0.960559L1.73684 0.464219C2.13827 0.195374 2.67451 0.251978 3.01096 0.598711L12 9.86243L20.989 0.598712Z"
+                            fill="#fff"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <ul class="topbar_lists">
+                      <li class="topbar_options" style="--i: 5">
+                        <span class="topbar_option-texts">BDT</span>
+                      </li>
+                      <li class="topbar_options" style="--i: 4">
+                        <span class="topbar_option-texts">BDT</span>
+                      </li>
+                      <li class="topbar_options" style="--i: 3">
+                        <span class="topbar_option-texts">EURO</span>
+                      </li>
+                      <li class="topbar_options" style="--i: 2">
+                        <span class="topbar_option-texts">RS</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </form>
               <form>
-                <select id="cars" name="cars">
-                  <option value="volvo">English</option>
-                  <option value="saab">Bangla</option>
-                  <option value="fiat">Hindi</option>
-                  <option value="audi">Bangla</option>
-                </select>
+                <div class="topbar_section_items_contents">
+                  <div class="total_products_content_input">
+                    <div class="topbar_btn" id="topbar_btn">
+                      <span id="topbar_text" style="padding-right: 5px"
+                        >English</span
+                      >
+                      <span
+                        ><svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 24 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.989 0.598712C21.3255 0.251978 21.8617 0.195375 22.2632 0.46422L23.0043 0.96056C23.5227 1.30777 23.6001 2.03975 23.1657 2.48765L12 14L0.834341 2.48765C0.399927 2.03975 0.47728 1.30777 0.99572 0.960559L1.73684 0.464219C2.13827 0.195374 2.67451 0.251978 3.01096 0.598711L12 9.86243L20.989 0.598712Z"
+                            fill="#fff"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <ul class="topbar_list">
+                      <li class="topbar_option" style="--i: 5">
+                        <span class="topbar_option-text">Bangla</span>
+                      </li>
+                      <li class="topbar_option" style="--i: 4">
+                        <span class="topbar_option-text">Hindi</span>
+                      </li>
+                      <li class="topbar_option" style="--i: 3">
+                        <span class="topbar_option-text">EURO</span>
+                      </li>
+                      <li class="topbar_option" style="--i: 2">
+                        <span class="topbar_option-text">Bangla</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
@@ -326,7 +387,7 @@
         </div>
       </div>
     </header>
-    <!-- Navbar End --
+    <!-- Navbar End -- >
 
     <!-- Hero  Start -->
     <section id="contact_hero">
@@ -1067,6 +1128,7 @@
     <script src="./assets/js/tab.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/number_counter.js"></script>
+    <script src="./assets/js/topbar.js"></script>
     <!-- Js Link End -->
 
     <!-- Swiper JS Start -->
