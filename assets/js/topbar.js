@@ -1,10 +1,12 @@
-const selectBtn = document.getElementById('select_btn');
-const text = document.getElementById('select_text');
-const option = document.getElementsByClassName('option');
+const selectBtn = document.getElementById('topbar_btn');
+const text = document.getElementById('topbar_text');
+const option = document.getElementsByClassName('topbar_option');
 
 selectBtn.addEventListener('click', function() {
     selectBtn.classList.toggle('active');
 });
+
+console.log(".add");
 
 for (options of option) {
     options.onclick = function() {
@@ -12,4 +14,3 @@ for (options of option) {
         selectBtn.classList.remove('active');
     }
 };
-
