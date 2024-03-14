@@ -81,6 +81,62 @@ ul {
 }
 /* Go-Back End */
 
+/* Mobile Menu Start */
+#mobile_menu {
+  position: fixed;
+  top: 93%;
+  bottom: 0;
+  background: var(--white);
+  width: 100%;
+  box-shadow: 0, 0, 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+.mobile_menu_items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mobile_menu_items a i {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #mobile_menu {
+    display: block;
+  }
+
+  #progress {
+    bottom: 60px;
+  }
+  .copy_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 557px) {
+  .mobile_menu_item {
+    border-right: 1px solid rgba(54, 189, 100, 0.8);
+    padding-right: 20px;
+  }
+
+  .mobile_menu_item:nth-child(5) {
+    border: none;
+  }
+}
+/* Mobile Menu End */
+
 /* Topbar Start */
 #topbar {
   background: var(--primary-color);
