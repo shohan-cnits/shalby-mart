@@ -131,7 +131,11 @@ p {
   color: var(--primary-color);
 }
 
-.hero_content_text a:hover.hero_content_text a svg path {
+.hero_content_text a svg path {
+  fill: #fff;
+}
+
+.hero_content_text a:hover path {
   fill: var(--primary-color);
 }
 
