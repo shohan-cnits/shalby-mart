@@ -217,7 +217,7 @@ ul {
     display: block;
   }
   #progress {
-    display: none;
+    display: none !important;
   }
 }
 

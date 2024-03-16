@@ -1092,32 +1092,50 @@
     <!-- Mobile Menu Start -->
     <section id="mobile_menu">
       <div class="container">
-        <div class="mobile_menu_items">
-          <div class="mobile_menu_item">
-            <a href="#"
-              ><i class="fa-solid fa-user" style="color: #000000"></i
-            ></a>
-          </div>
-          <div class="mobile_menu_item">
-            <a href="#"
-              ><i class="fa-brands fa-windows" style="color: #000000"></i
-            ></a>
-          </div>
-          <div class="mobile_menu_item">
-            <a href="#">
-              <i class="fa-solid fa-house" style="color: #000000"></i
-            ></a>
-          </div>
-          <div class="mobile_menu_item">
-            <a href="#"
-              ><i class="fa-solid fa-cart-shopping" style="color: #000000"></i
-            ></a>
-          </div>
-          <div class="mobile_menu_item">
-            <a href="#">
-              <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i
-            ></a>
-          </div>
+        <div class="mobile_navigation">
+          <ul>
+            <li class="mobile_navigation_list">
+              <a
+                ><span class="mobile_navigation_icon"
+                  ><ion-icon name="home-outline"></ion-icon
+                ></span>
+                <span class="mobile_navigation_text">House</span>
+              </a>
+            </li>
+            <li class="mobile_navigation_list">
+              <a
+                ><span class="mobile_navigation_icon"
+                  ><ion-icon name="cart-outline"></ion-icon
+                ></span>
+                <span class="mobile_navigation_text">Cart</span>
+              </a>
+            </li>
+            <li class="mobile_navigation_list active">
+              <a
+                ><span class="mobile_navigation_icon"
+                  ><ion-icon name="person-outline"></ion-icon
+                ></span>
+                <span class="mobile_navigation_text">Profile</span>
+              </a>
+            </li>
+            <li class="mobile_navigation_list">
+              <a
+                ><span class="mobile_navigation_icon"
+                  ><ion-icon name="chatbubble-outline"></ion-icon
+                ></span>
+                <span class="mobile_navigation_text">Message</span>
+              </a>
+            </li>
+            <li class="mobile_navigation_list">
+              <a
+                ><span class="mobile_navigation_icon"
+                  ><ion-icon name="settings-outline"></ion-icon
+                ></span>
+                <span class="mobile_navigation_text">Setting</span>
+              </a>
+            </li>
+            <div class="mobile_indicator"></div>
+          </ul>
         </div>
       </div>
     </section>
@@ -1129,6 +1147,7 @@
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/number_counter.js"></script>
     <script src="./assets/js/topbar.js"></script>
+    <script src="./assets/js/mobile-navigation.js"></script>
     <!-- Js Link End -->
 
     <!-- Swiper JS Start -->
@@ -1141,5 +1160,16 @@
     <!-- Bootstrap JS Link Start -->
     <script src="./assets/css/bootstrap/bootstrap.min.js"></script>
     <!-- Bootstrap JS Link End -->
+
+    <!-- Ionicons CDN Start -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Ionicons CDN End -->
   </body>
 </html>
