@@ -115,28 +115,69 @@ p {
   padding-bottom: 30px;
 }
 
-.hero_content_text a {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid #f59305;
-  background: var(--primary-color);
-  color: var(--white);
-  font-family: var(--primary-font);
-  transition: 0.3s ease;
+.effect-btn {
+  position: relative;
+  width: 180px;
+  height: 50px;
+  background: rgba(245, 147, 5, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255);
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-top: 1px solid rgba(245, 147, 5, 1);
+  border-left: 1px solid rgba(245, 147, 5, 1);
+  padding-left: 30px;
+  transition: 0.5s;
+  overflow: hidden;
   border-radius: 5px;
+  font-family: var(--primary-font);
 }
 
-.hero_content_text a:hover {
-  background: var(--white);
-  color: var(--primary-color);
+.effect-btn:hover {
+  padding-left: 0px;
+  padding-right: 40px;
+  color: rgba(245, 147, 5, 1);
+  background: #fff;
 }
 
-.hero_content_text a svg path {
+.effect-btn span {
+  position: absolute;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(245, 147, 5, 1);
+  align-items: center;
+}
+
+.effect-btn:hover span {
+  left: calc(100% - 45px);
+  background: rgba(245, 147, 5, 1);
+}
+
+.effect-btn::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateX(-170px) skewX(30deg);
+  transition: 0.75s ease-in-out;
+}
+
+.effect-btn:hover::after {
+  transform: translateX(170px) skewX(30deg);
+}
+
+.effect-btn:hover path {
   fill: #fff;
-}
-
-.hero_content_text a:hover path {
-  fill: var(--primary-color);
 }
 
 @media screen and (max-width: 1201px) {

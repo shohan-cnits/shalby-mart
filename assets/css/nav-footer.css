@@ -241,8 +241,8 @@ ul {
   .mobile_navigation ul li:nth-child(5).active ~ .mobile_indicator {
     transform: translateX(calc(107px * 4));
   }
-
-  /* #progress {
+  /* 
+  #progress {
     bottom: 60px;
   } */
   .copy_right {
@@ -415,7 +415,7 @@ ul {
 
 .topbar_section_items {
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
   padding-top: 3px;
   align-items: center;
   justify-content: end;
@@ -428,21 +428,6 @@ ul {
   border-right: var(--primary-border);
   padding-right: 10px;
   margin: 0;
-}
-
-.topbar_section_items form select {
-  border: none !important;
-  background: none;
-  color: var(--white);
-  outline: none;
-  font-size: 14px;
-  font-family: var(--secondary-font);
-}
-
-.topbar_section_items form select option {
-  color: var(--black);
-  font-size: 14px;
-  font-family: var(--secondary-font);
 }
 
 .total_products_content_input {
@@ -459,9 +444,10 @@ ul {
   height: 25px;
   font-size: 15px;
   font-weight: 500;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: var(--secondary-font);
 }
 
 .topbar_btn .icon_arraw {
@@ -508,6 +494,7 @@ ul {
   display: flex;
   width: 100%;
   align-items: center;
+  font-family: var(--secondary-font);
   height: 25px;
   padding: 0 16px;
   cursor: pointer;
@@ -562,9 +549,10 @@ ul {
   height: 25px;
   font-size: 15px;
   font-weight: 500;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: var(--secondary-font);
 }
 
 .topbar_btns .icon_arraw {
@@ -603,7 +591,6 @@ ul {
   font-size: 15px;
   font-weight: 500;
   text-align: center;
-  font-family: var(--secondary-font);
   color: #000000;
 }
 
@@ -613,6 +600,7 @@ ul {
   align-items: center;
   height: 25px;
   padding: 0 16px;
+  font-family: var(--secondary-font);
   cursor: pointer;
   background: #fff;
   border: var(--primary-border);
@@ -643,10 +631,9 @@ ul {
   margin-bottom: 0;
 }
 
-.topbar_section_items {
+.topbar_section_menu {
   display: flex;
-  gap: 10px;
-  /* justify-content: space-between; */
+  gap: 5px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1682,6 +1669,12 @@ ul {
 
   .copy_right {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .copy_right {
+    margin-bottom: 60px;
   }
 }
 /* Footer End */
