@@ -71,19 +71,19 @@ p {
 
 @media screen and (max-width: 778px) {
   .contact_hero_heading h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .contact_hero_heading p {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .contact_hero_heading h1 {
-    font-size: 22px;
+    font-size: 40px;
   }
   .contact_hero_heading p {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 /* Hero  End */
@@ -165,7 +165,7 @@ p {
   font-size: 16px;
   text-align: center;
   align-items: center;
-  color: rgba(163, 163, 163, 1);
+  color: rgb(73, 71, 71);
   font-family: var(--secondary-font);
 }
 
@@ -186,7 +186,7 @@ p {
 .phone_content_box_btn a {
   display: block;
   font-family: 16px;
-  color: rgba(163, 163, 163, 1);
+  color: rgb(73, 71, 71);
   font-family: var(--secondary-font);
 }
 
@@ -211,7 +211,7 @@ p {
 .email_content_box_btn a {
   display: block;
   font-family: 16px;
-  color: rgba(163, 163, 163, 1);
+  color: rgb(73, 71, 71);
   font-family: var(--secondary-font);
 }
 
@@ -314,8 +314,8 @@ p {
 
 .message_box_content_cheakbox_btn {
   display: flex;
-  align-items: end;
-  justify-content: end;
+  align-items: start;
+  justify-content: start;
 }
 
 .message_box_content_cheakbox_btn a {
