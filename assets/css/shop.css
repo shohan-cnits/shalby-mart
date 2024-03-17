@@ -412,6 +412,19 @@ p {
   }
 }
 
+.swiper-pagination-bullet {
+  background: var(--primary-color) !important;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 10px;
+}
+.swiper-pagination-bullet-active {
+  outline-offset: 3px;
+  color: #f59305 !important;
+  outline: 1px solid var(--primary-color);
+}
+
 /* Special Offers End */
 
 /* Total Products Start */
